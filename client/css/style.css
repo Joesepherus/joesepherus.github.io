@@ -1,4 +1,5 @@
-body { background: #333; }
+/*timeline css*/
+body { background: white; }
 
 img { border: 0; max-width: 100%; }
 
@@ -11,9 +12,10 @@ img { border: 0; max-width: 100%; }
 
 /** timeline box structure **/
 .timeline {
-  list-style: none;
-  padding: 20px 0 20px;
-  position: relative;
+  	list-style: none;
+  	padding: 20px 0 20px;
+  	position: fixed;
+	margin-top: 100px;
 }
 
 .timeline:before {
@@ -21,7 +23,7 @@ img { border: 0; max-width: 100%; }
   bottom: 0;
   position: absolute;
   content: " ";
-  width: 3px;
+  width: 2px;
   background-color: #eee;
   left: 50%;
   margin-left: -1.5px;
@@ -41,8 +43,9 @@ img { border: 0; max-width: 100%; }
 }
 
 .timeline li {
-  margin-bottom: 25px;
-  position: relative;
+  	position: relative;
+	margin-bottom: 100px;
+  
 }
 
 .timeline li:before, .timeline li:after {
@@ -105,14 +108,14 @@ img { border: 0; max-width: 100%; }
 }
 
 .timeline li.timeline-inverted .timeline-panel {
-  float: right;
+  	float: right;
 }
 
 .timeline li.timeline-inverted .timeline-panel:before {
-  border-left-width: 0;
-  border-right-width: 15px;
-  left: -15px;
-  right: auto;
+	border-left-width: 0;
+	border-right-width: 15px;
+	left: -15px;
+	right: auto;
 }
 
 .timeline li.timeline-inverted .timeline-panel:after {
@@ -129,13 +132,13 @@ img { border: 0; max-width: 100%; }
   top: 23px;
   left: 50%;
   text-align: center;
-  background: #6a8db3;
+  background: white;
   color: #fff;
-  width: 35px;
-  height: 35px;
+  width: 10px;
+  height: 10px;
   line-height: 35px;
-  margin-left: -16px;
-  border: 3px solid #90acc7;
+  margin-left: -5px;
+  border: 1px solid black;
   border-top-right-radius: 50%;
   border-top-left-radius: 50%;
   border-bottom-right-radius: 50%;
@@ -147,8 +150,9 @@ img { border: 0; max-width: 100%; }
 /** timeline content **/
 
 .tl-heading h4 {
-  margin: 0;
-  color: #c25b4e;
+  color: grey;
+  padding-left: 100px;
+  padding-top: 8px;
 }
 
 .tl-body p, .tl-body ul {
@@ -208,4 +212,15 @@ img { border: 0; max-width: 100%; }
     left: -14px;
     right: auto;
   }
+}
+
+
+/*my css*/
+
+p {
+  color: black;
+}
+
+.test {
+	margin-top: 1800px;
 }
