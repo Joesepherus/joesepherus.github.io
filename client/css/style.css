@@ -1,5 +1,5 @@
 /*timeline css*/
-body { background: white; }
+body { background: #eef1ef; }
 
 img { border: 0; max-width: 100%; }
 
@@ -13,7 +13,7 @@ img { border: 0; max-width: 100%; }
 /** timeline box structure **/
 .timeline {
   	list-style: none;
-  	padding: 20px 0 20px;
+  	padding: 70px 0 20px;
   	position: fixed;
 	margin-top: 100px;
 }
@@ -24,7 +24,7 @@ img { border: 0; max-width: 100%; }
   position: absolute;
   content: " ";
   width: 2px;
-  background-color: #eee;
+  background-color: #d3d7d4;
   left: 50%;
   margin-left: -1.5px;
 }
@@ -45,7 +45,6 @@ img { border: 0; max-width: 100%; }
 .timeline li {
   	position: relative;
 	margin-bottom: 100px;
-  
 }
 
 .timeline li:before, .timeline li:after {
@@ -129,15 +128,15 @@ img { border: 0; max-width: 100%; }
 /** timeline circle icons **/
 .timeline li .tl-circ {
   position: absolute;
-  top: 23px;
+  top: 28px;
   left: 50%;
   text-align: center;
   background: white;
   color: #fff;
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   line-height: 35px;
-  margin-left: -5px;
+  margin-left: -7px;
   border: 1px solid black;
   border-top-right-radius: 50%;
   border-top-left-radius: 50%;
@@ -149,10 +148,10 @@ img { border: 0; max-width: 100%; }
 
 /** timeline content **/
 
-.tl-heading h4 {
+.tl-heading h3 {
   color: grey;
   padding-left: 100px;
-  padding-top: 8px;
+  padding-top: 2px;
 }
 
 .tl-body p, .tl-body ul {
@@ -224,3 +223,73 @@ p {
 .test {
 	margin-top: 1800px;
 }
+
+.playlistImg {
+	margin-top: 50px;
+	opacity: 0.5;
+}
+
+.playlistTxt {
+	margin-top: 50px;
+}
+
+.date {
+    text-align: right;
+}
+
+.col-md-12 {
+	padding-left: 0px!important;
+}
+
+div.description {
+	height: 200px;
+}
+
+.description {
+	height: 60px;
+	overflow: hidden;
+	text-overflow: ellipsis; 
+}
+
+.descHighlited {
+	height: 200px;
+	overflow: visible;
+	text-overflow: normal; 
+}
+
+/* test */
+
+		html, body { margin: 0; padding: 0; width: 100%; height: 100%;}
+		header {
+			position: fixed;
+            top: 0;
+			width: 100%;
+			height: 80px;
+			background: #fff;
+		}
+		nav {
+			width: 960px;
+			height: 80px;
+			margin: 0 auto;
+		}
+		nav ul {
+			margin: 20px 0 0;
+		}
+		nav ul li {
+			display: inline-block;
+			margin: 0 30px 0 0;
+		}
+ 
+		a { color: #4D4D4D;  font-family: sans-serif; text-transform: uppercase; text-decoration: none; line-height: 42px; }
+		.active { color: #2dbccb; }
+ 
+		.content {
+			 width: 100%; height: 150px; 
+			  margin-top: 80px;
+			}
+		.content > section { width: 100%; height: 100%; }
+ 
+		#home { background: #2dbccb; }
+		#about { background: #f6c362; }
+		#services { background-color: #eb7e7f; }
+		#contact { background-color: #415c71; }
