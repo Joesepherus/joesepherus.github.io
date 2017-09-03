@@ -243,10 +243,11 @@ p {
 }
 
 div.description {
-	height: 200px;
+	height:60px;
 }
 
 .description {
+	max-height: 60px;
 	height: 60px;
 	overflow: hidden;
 	text-overflow: ellipsis; 
@@ -259,13 +260,12 @@ div.description {
 }
 
 
+
 .parent {
-	width: 220px;
 	height: 220px;
 }
 
 .child {
-
   background-image: url("images/city.jpg");
   background-position: center;
   background-size: cover;
@@ -281,7 +281,28 @@ div.description {
 	margin-bottom: 0px;
 }
 
-/* test */
+#test {
+    opacity: 0;
+    -webkit-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -ms-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
+}
+
+
+/*.description .read-more { 
+  position: absolute; 
+  bottom: 0; 
+  left: 0;
+  width: 100%; 
+  text-align: center; 
+  margin: 0; padding: 30px 0; 
+	
+   "transparent" only works here because == rgba(0,0,0,0) 
+}*/
+
+ /*test */
 
 		html, body { margin: 0; padding: 0; width: 100%; height: 100%;}
 		header {
@@ -317,3 +338,5 @@ div.description {
 		#about { background: #f6c362; }
 		#services { background-color: #eb7e7f; }
 		#contact { background-color: #415c71; }
+		
+
