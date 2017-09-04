@@ -14,8 +14,10 @@ img { border: 0; max-width: 100%; }
 .timeline {
   	list-style: none;
   	padding: 70px 0 20px;
-  	position: fixed;
-	margin-top: 100px;
+	position: fixed;
+	margin-left: 100px;
+	margin-top: 150px;
+	  
 }
 
 .timeline:before {
@@ -44,7 +46,7 @@ img { border: 0; max-width: 100%; }
 
 .timeline li {
   	position: relative;
-	margin-bottom: 100px;
+	margin-bottom: 70px;
 }
 
 .timeline li:before, .timeline li:after {
@@ -128,7 +130,6 @@ img { border: 0; max-width: 100%; }
 /** timeline circle icons **/
 .timeline li .tl-circ {
   position: absolute;
-  top: 28px;
   left: 50%;
   text-align: center;
   background: white;
@@ -298,6 +299,21 @@ div.description {
 .testingDiv {
 	margin-top: 44px;
 	margin-bottom: 1000px;
+	padding-left: 200px;
+}
+
+
+.logo {
+	width: 200px;
+	height: 100px;
+	margin-left: 100px;
+	position: fixed;
+}
+
+svg {
+  display: block;
+  margin: 0 auto 20px;
+  fill: #ea5700;
 }
 
 /*.description .read-more { 
