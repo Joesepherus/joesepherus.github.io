@@ -391,21 +391,27 @@ var sectionScrolling = false;
 
 		});
 	});
-				var div = -1; // current div
+				var div = 0; // current div
 	
 		var scrollTimer, lastScrollFireTime = 0;
 		$(document.body).on('DOMMouseScroll mousewheel', function (e) {
+			
 			console.log("DIV: " + div);
 			if (sectionScrolling) {
+				
 				var i = 0;
 				var scrollPosition = $(document).scrollTop();
+				
 				$('.playlist').each(function () {
 					var currentDiv = $(this);
 					var currentImg = $(currentDiv).find(".playlistImg");
-					console.log(currentImg.offset().top);
+					//console.log(currentImg.offset().top);
 					if (currentImg.offset().top - 150 <= scrollPosition && currentImg.offset().top + currentImg.height() - 51 > scrollPosition) {
 						totalHeight = 300;
-						div = i;
+						if (!isNaN(i)){
+							//console.log("DICK" + i);
+							div = i;
+						}
 						$(this).closest(".playlist").find("div.description")
 							.css({
 								// Set height to prevent instant jumpdown when max height is removed
@@ -431,7 +437,7 @@ var sectionScrolling = false;
 				});
 			}
 			else {
-				
+				console.log("????");
 				processScroll();
 					/*var minScrollTime = 2000;
 					var now = new Date().getTime();
@@ -450,6 +456,8 @@ var sectionScrolling = false;
 
 				function processScroll(event){
 					var scrollPosition = $(document).scrollTop();
+							console.log(scrollPosition);
+					
 						
 					var divs = $('.playlist');
 					var dir = 'up'; // wheel scroll direction
@@ -457,27 +465,40 @@ var sectionScrolling = false;
 						if (e.originalEvent.detail > 0 || e.originalEvent.wheelDelta < 0) {
 							dir = 'down';
 								//console.log(divs[div].offset().top);
-							var scroll 
+							var scroll;
 							if(div == 0) {
-								scroll = 230;
+								scroll = 220;
 							}
 							else {
-								scroll = 230 * div + 80 * div + 230;
+								scroll = 230 * div + 80 * div + 230 ;
 							}
-							div++;	
-								console.log(scroll);
-												
+							console.log("leghth" + divs.length);
+							if (div > divs.length - 1) {
+								div = divs.length - 1;
+								return;
+							}
+							else {
+								div++;
+
+							}
+							$('html,body').stop().animate({
+									scrollTop: scroll
+								}, 1000);	
 							/*$(window).resize(function () {
 								$('html,body').scrollTop(scroll);
 							});*/
-							$('html,body').stop().animate({
-								scrollTop: scroll
-							}, 1000);
+
 						} 
 						else {
 							dir = 'up';
-							div--;
-							var scroll = scrollPosition - 310;			
+							if (div <= 0) {
+								div = -1;
+							}
+							else {
+								div--;
+							}
+							//var scroll = scrollPosition - 310;	
+							var scroll = (div - 1) * 310 + 220		
 							//console.log(divs[div].offset().top);
 							/*$(window).resize(function () {
 								$('html,body').scrollTop(scroll);

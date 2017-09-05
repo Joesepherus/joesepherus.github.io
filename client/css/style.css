@@ -226,6 +226,8 @@ p {
 }
 
 .playlistImg {
+	width: 220px!important;
+	height: 220px;
 	margin-top: 50px;
 	opacity: 0.5;
 	cursor: pointer;
@@ -298,7 +300,7 @@ div.description {
 
 .testingDiv {
 	margin-top: 44px;
-	margin-bottom: 1000px;
+	height: 3000px;
 	padding-left: 200px;
 }
 
