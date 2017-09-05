@@ -1,5 +1,10 @@
 /*timeline css*/
-body { background: #eef1ef; }
+body {
+    background: -webkit-linear-gradient(left, #f1f1f1 , #fdfdfd); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #f1f1f1 , #fdfdfd); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #f1f1f1 , #fdfdfd); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #f1f1f1 , #fdfdfd); /* Standard syntax (must be last) */
+}
 
 img { border: 0; max-width: 100%; }
 
@@ -134,8 +139,8 @@ img { border: 0; max-width: 100%; }
   text-align: center;
   background: white;
   color: #fff;
-  width: 15px;
-  height: 15px;
+  width: 13px;
+  height: 13px;
   line-height: 35px;
   margin-left: -7px;
   border: 1px solid black;
@@ -226,8 +231,7 @@ p {
 }
 
 .playlistImg {
-	width: 220px!important;
-	height: 220px;
+	width: 100%!important;
 	margin-top: 50px;
 	opacity: 0.5;
 	cursor: pointer;
@@ -236,6 +240,8 @@ p {
 .playlistTxt {
 	margin-top: 50px;
 	height: 260px;
+	width: 1000px;
+	padding-left: 250px;
 }
 
 .date {
@@ -270,7 +276,7 @@ div.description {
 
 
 .parent {
-	height: 220px;
+	height: 0px;
 }
 
 .child {
@@ -280,8 +286,7 @@ div.description {
   transition: all .5s;
 }
 
-.parent:hover .child,
-.parent:focus .child {
+.child:hover {
   transform: scale(1.1);
 }
 
@@ -306,10 +311,11 @@ div.description {
 
 
 .logo {
-	width: 200px;
-	height: 100px;
+	width: 150;
+	height: 56.02px;
 	margin-left: 100px;
 	position: fixed;
+	margin-top: 20px;
 }
 
 svg {
@@ -317,6 +323,8 @@ svg {
   margin: 0 auto 20px;
   fill: #ea5700;
 }
+
+
 
 /*.description .read-more { 
   position: absolute; 
@@ -367,3 +375,95 @@ svg {
 		#contact { background-color: #415c71; }
 		
 
+/* Categories Website */
+
+img.categories {
+	width: 220px;
+	height: 220px;
+	margin-right: 50px;
+	margin-bottom: 150px;
+	margin-top: 30px;
+	cursor: pointer;	
+}
+
+div.categories {
+	margin-top: 150px;
+}
+
+div.leftSection {
+	margin-right: 150px;
+}
+
+p.descriptionCategories {
+	width: 850px;
+	margin-bottom: 30px;
+}
+
+.img-with-text {
+    text-align: justify;
+	width: 220px;
+	margin-bottom: 30px;
+}
+
+.img-with-text img {
+    display: block;
+	margin: 0 auto;
+}
+
+.playlistLogo {
+	width: 350px!important;
+	height: 100px;
+	margin-left: 100px;
+	position: fixed;
+	margin-top: 200px;
+	fill: white;
+}
+
+.vinylLogo {
+	width: 100px!important;
+	height: 56.02px;
+
+}
+
+.playlistLogoDiv {
+	width: 200px;
+	height: 170px;
+	background-color: #ea5700;
+	position: fixed;
+	margin-left: 160px;
+	margin-top: 160px;
+	border-radius: 25px;
+}
+
+h4.categories{
+	margin-left: 80px;
+}
+
+.arrow {
+	width: 100px;
+	height: 50px;
+
+}
+
+div.arrow{
+	margin-left: 250px;
+	margin-top: -70px;
+	width: 100px;
+}
+
+div.vinyl {
+	width: 100px;
+	margin-left: 120px;
+	margin-top: 800px;
+}
+
+.childLogos {
+  background-image: url("images/city.jpg");
+  background-position: center;
+  background-size: cover;
+  transition: all .5s;
+}
+
+.childLogos:hover {
+  transform: scale(1.4);
+}
