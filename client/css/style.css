@@ -6,6 +6,18 @@ body {
     background: linear-gradient(to right, #f1f1f1 , #ffffff); /* Standard syntax (must be last) */
 }
 
+@font-face {
+	font-family: 'Gotham-light';
+	src: url('fonts/Gotham-light/GothamLight.eot');	
+	src: local('fonts/Gotham-light/GothamLight'), url('fonts/Gotham-light/GothamLight.woff') format('woff'), url('fonts/Gotham-light/GothamLight.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Gotham-bold';
+	src: url('fonts/Gotham-bold/gothambold1.eot');
+	src: local('fonts/Gotham-bold/gothambold1'), url('fonts/Gotham-bold/gothambold1.woff') format('woff'), url('fonts/Gotham-bold/gothambold1.ttf') format('truetype');
+}
+
 img { border: 0; max-width: 100%; }
 
 .page-header h1 {
@@ -23,6 +35,10 @@ img { border: 0; max-width: 100%; }
 	margin-left: 100px;
 	margin-top: 150px;
 	  
+}
+
+i {
+	margin-right: 30px;
 }
 
 .timeline:before {
@@ -407,6 +423,7 @@ div.leftSection {
 
 p.descriptionCategories {
 	margin-bottom: 30px;
+	font-family: "Gotham-light";
 }
 
 
@@ -424,12 +441,29 @@ p.descriptionCategories {
 	fill: white;
 }
 
+.videoLogo {
+	width: 50%!important;
+	max-height: 120px;
+	margin-top: 50px;
+	float:left;
+	display: block;
+	margin-bottom: 0px;
+}
+
+.videoLogoDiv {
+	text-align:center;
+	
+}
+
+.videoLogoDiv svg{
+    display: block;
+	
+}
 
 
 .playlistLogoDiv {
 	width: 110px;
 	height: 110px;
-	margin-left: 50px;
 	margin-top: 160px;
 	border-radius: 25px;
 	 background: -webkit-linear-gradient(left, #ea5700 , #f17700); /* For Safari 5.1 to 6.0 */
@@ -439,6 +473,12 @@ p.descriptionCategories {
 }
 
 h4.categories{
+	font-family: "Gotham-light";
+	
+}
+
+h3 {
+	font-family: "Gotham-bold";	
 }
 
 svg.vinylLogo {
@@ -451,20 +491,19 @@ svg.vinylLogo {
 svg.arrow {
 	width: auto;
 	height: auto; 
-	max-width: 50%; 
+	max-width: 40%; 
 	bottom: 0;
 }
 
 div.lil {
 	height: auto;
-	
 	bottom: 0;
+	margin-right: -50px;
 }
 
 div.arrow{
-	width: 100px;
+	max-width: 100px;
 	height: auto;
-	
 }
 
 div.vinyl {
@@ -487,3 +526,9 @@ div.vinyl {
   /* Set the fixed height of the footer here */
   height: 60px;
 }
+
+.divider {
+	width: 6%;
+	max-height: 800px;
+}
+
