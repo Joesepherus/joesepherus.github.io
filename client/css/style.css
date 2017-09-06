@@ -441,38 +441,49 @@ p.descriptionCategories {
 h4.categories{
 }
 
-.vinylLogo {
-	width: 60%;
-
+svg.vinylLogo {
+	width: auto;
+	height: auto; 	
+	max-width: 50%;
+	bottom: 0;
 }
 
-.arrow {
+svg.arrow {
 	width: auto;
 	height: auto; 
-    max-width: 50%; 
+	max-width: 50%; 
+	bottom: 0;
+}
+
+div.lil {
+	height: auto;
+	
+	bottom: 0;
 }
 
 div.arrow{
 	width: 100px;
-	margin-top: 480px;
+	height: auto;
 	
 }
 
 div.vinyl {
-	width: auto;
-		height: auto; 
-    max-width: 50%; 
-
-	margin-top: 480px;
+	max-width: 100px;
+	height: auto;
 }
 
 .childLogos {
-  background-image: url("images/city.jpg");
-  background-position: center;
-  background-size: cover;
   transition: all .5s;
 }
 
 .childLogos:hover {
-  transform: scale(1.4);
+  opacity: 0.8;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
 }
