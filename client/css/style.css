@@ -1,9 +1,9 @@
 /*timeline css*/
 body {
-    background: -webkit-linear-gradient(left, #f1f1f1 , #fdfdfd); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, #f1f1f1 , #fdfdfd); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, #f1f1f1 , #fdfdfd); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right, #f1f1f1 , #fdfdfd); /* Standard syntax (must be last) */
+    background: -webkit-linear-gradient(left, #f1f1f1 , #ffffff); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #f1f1f1 , #ffffff); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #f1f1f1 , #ffffff); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #f1f1f1 , #ffffff); /* Standard syntax (must be last) */
 }
 
 img { border: 0; max-width: 100%; }
@@ -313,8 +313,6 @@ div.description {
 .logo {
 	width: 150;
 	height: 56.02px;
-	margin-left: 100px;
-	position: fixed;
 	margin-top: 20px;
 }
 
@@ -378,8 +376,7 @@ svg {
 /* Categories Website */
 
 img.categories {
-	width: 220px;
-	height: 220px;
+	width: 80%;
 	margin-right: 50px;
 	margin-bottom: 150px;
 	margin-top: 30px;
@@ -395,7 +392,6 @@ div.leftSection {
 }
 
 p.descriptionCategories {
-	width: 850px;
 	margin-bottom: 30px;
 }
 
@@ -411,50 +407,49 @@ p.descriptionCategories {
 }
 
 .playlistLogo {
-	width: 350px!important;
-	height: 100px;
-	margin-left: 100px;
-	position: fixed;
-	margin-top: 200px;
+	width: 60%!important;
+	height: 60%;
+	padding-top: 20px;
+	margin-left: 30px;
 	fill: white;
 }
 
-.vinylLogo {
-	width: 100px!important;
-	height: 56.02px;
 
-}
 
 .playlistLogoDiv {
-	width: 200px;
-	height: 170px;
-	background-color: #ea5700;
-	position: fixed;
-	margin-left: 160px;
+	width: 110px;
+	height: 110px;
+	margin-left: 50px;
 	margin-top: 160px;
 	border-radius: 25px;
+	 background: -webkit-linear-gradient(left, #ea5700 , #f17700); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #ea5700 , #f17700); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #ea5700 , #f17700); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #ea5700 , #f17700); /* Standard syntax (must be last) */
 }
 
 h4.categories{
 	margin-left: 80px;
 }
 
-.arrow {
-	width: 100px;
-	height: 50px;
+.vinylLogo {
+	width: 60%;
 
 }
 
+.arrow {
+	width: 60%;
+}
+
 div.arrow{
-	margin-left: 250px;
-	margin-top: -70px;
 	width: 100px;
+	margin-top: 480px;
+	
 }
 
 div.vinyl {
 	width: 100px;
-	margin-left: 120px;
-	margin-top: 800px;
+	margin-top: 480px;
 }
 
 .childLogos {
