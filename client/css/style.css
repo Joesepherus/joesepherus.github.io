@@ -544,7 +544,7 @@ input {
 }
 
 .yourPlaylistPara {
-	color: #A47171;
+	color: #3c3c3c;
 	font-family: "Gotham-light";
 }
 
@@ -556,16 +556,14 @@ h3 span {
 	margin-top: 70px;
 }
 
-.lastInput {
-	margin-top: 60px!important;
-}
+
 
 .addAttachments {
 	text-align: left;
 }
 
 label {
-	color: #A47171;
+	color: #3c3c3c;
 }
 
 label span {
