@@ -557,7 +557,7 @@ input {
 
 h3 span {
 	font-family: "Gotham-bold"!important;	
-	color: #EA5700;	
+	color: #ed6c1e;	
 }
 
 .newYourPlaylistForm {
@@ -567,6 +567,7 @@ h3 span {
 
 
 .addAttachments {
+	font-size: 15px;	
 	text-align: left;
 }
 
@@ -576,13 +577,30 @@ label {
 }
 
 label span {
-	font-size: 12px
+	font-size: 12px;
 }
 
 h3 {
 	font-family: "Gotham-book";	
+	letter-spacing: 3px;
+	
 }
 
 i {
 	color: #bebebe;
 }
+
+input placeholder {
+	font-family: "Gotham-light";	
+	color: #3c3c3c;	
+}
+
+p {
+	letter-spacing: 1.2px;	
+}
+
+.whatKindOfPlaylistPara {
+	font-size: 15px;
+	color: #3c3c3c!important;		
+}
+
