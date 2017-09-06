@@ -18,6 +18,12 @@ body {
 	src: local('fonts/Gotham-bold/gothambold1'), url('fonts/Gotham-bold/gothambold1.woff') format('woff'), url('fonts/Gotham-bold/gothambold1.ttf') format('truetype');
 }
 
+@font-face {
+	font-family: 'Gotham-book';
+	src: url('fonts/Gotham-book/GothamBook.eot');
+	src: local('fonts/Gotham-book/GothamBook'), url('fonts/Gotham-book/GothamBook.woff') format('woff'), url('fonts/Gotham-book/GothamBook.ttf') format('truetype');
+}
+
 img { border: 0; max-width: 100%; }
 
 .page-header h1 {
@@ -550,6 +556,7 @@ input {
 }
 
 h3 span {
+	font-family: "Gotham-bold"!important;	
 	color: #EA5700;	
 }
 
@@ -564,9 +571,14 @@ h3 span {
 }
 
 label {
+	font-family: "Gotham-light";	
 	color: #3c3c3c;
 }
 
 label span {
 	font-size: 12px
+}
+
+h3 {
+	font-family: "Gotham-book";	
 }
