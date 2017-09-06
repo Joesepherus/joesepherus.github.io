@@ -376,11 +376,14 @@ svg {
 /* Categories Website */
 
 img.categories {
-	width: 80%;
+	height: auto; 
+    width: auto; 
+    max-width: 80%; 
 	margin-right: 50px;
 	margin-bottom: 150px;
 	margin-top: 30px;
-	cursor: pointer;	
+	cursor: pointer;
+		
 }
 
 div.categories {
@@ -438,7 +441,9 @@ h4.categories{
 }
 
 .arrow {
-	width: 60%;
+	width: auto;
+	height: auto; 
+    max-width: 50%; 
 }
 
 div.arrow{
@@ -448,7 +453,10 @@ div.arrow{
 }
 
 div.vinyl {
-	width: 100px;
+	width: auto;
+		height: auto; 
+    max-width: 50%; 
+
 	margin-top: 480px;
 }
 
