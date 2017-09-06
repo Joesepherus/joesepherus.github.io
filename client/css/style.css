@@ -532,3 +532,42 @@ div.vinyl {
 	max-height: 800px;
 }
 
+/* Your playlist */
+
+input {
+	background: transparent;
+	margin-bottom: 40px;
+}
+
+.w3-container {
+	padding: 0px 0px 0px 0px;
+}
+
+.yourPlaylistPara {
+	color: #A47171;
+	font-family: "Gotham-light";
+}
+
+h3 span {
+	color: #EA5700;	
+}
+
+.newYourPlaylistForm {
+	margin-top: 70px;
+}
+
+.lastInput {
+	margin-top: 60px!important;
+}
+
+.addAttachments {
+	text-align: left;
+}
+
+label {
+	color: #A47171;
+}
+
+label span {
+	font-size: 12px
+}
