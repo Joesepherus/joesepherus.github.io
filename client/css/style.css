@@ -553,6 +553,7 @@ input {
 	color: #3c3c3c;
 	font-family: "Gotham-light";
 	font-size: 12px;
+	padding-left: 7px;
 }
 
 h3 span {
@@ -571,28 +572,55 @@ h3 span {
 	text-align: left;
 }
 
+div.addAttachmentsDiv {
+	margin-left: -6px;
+}
+
 label {
 	font-family: "Gotham-light";	
 	color: #3c3c3c;
+	letter-spacing: 1px;		
 }
 
 label span {
 	font-size: 12px;
+	letter-spacing: 1px;		
 }
 
-h3 {
+h3.yourPlaylistHeader {
 	font-family: "Gotham-book";	
 	letter-spacing: 3px;
-	
+	padding-left: 7px;	
 }
 
 i {
 	color: #bebebe;
 }
 
+.mainLoginInput::-webkit-input-placeholder {
+	font-family: "Gotham-light";
+	letter-spacing: 1px;			
+}
+
+.mainLoginInput:-ms-input-placeholder {
+	font-family: "Gotham-light";	
+	letter-spacing: 1px;	
+}
+
+.mainLoginInput:-moz-placeholder {
+	font-family: "Gotham-light";
+	letter-spacing: 1px;	
+}
+
+.mainLoginInput::-moz-placeholder {
+	font-family: "Gotham-light";	
+	letter-spacing: 1px;	
+}
+
 input placeholder {
 	font-family: "Gotham-light";	
 	color: #3c3c3c;	
+	letter-spacing: 1px;		
 }
 
 p {
@@ -602,6 +630,11 @@ p {
 .whatKindOfPlaylistPara {
 	font-size: 15px;
 	color: #3c3c3c!important;	
-	font-family: "Gotham-light";			
+	font-family: "Gotham-light";
+	letter-spacing: 1px;
+	padding-left: 7px;							
 }
 
+span.plus {
+	font-size: 20px;
+}

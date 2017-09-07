@@ -68,10 +68,10 @@
 
 	<form name="newYourPlaylistForm" id="newTaskForm" class="w3-container newYourPlaylistForm" method="post" ng-submit="addTask()">
             <p>
-                <input placeholder="Your phone number" class="w3-input" name="newTaskTitle" id="inputTitle" type="text" ng-model="newTask.title" required>
+                <input placeholder="Your phone number" class="w3-input mainLoginInput" name="newTaskTitle" id="inputTitle" type="text" ng-model="newTask.title" required>
             </p>
             <p>     
-                <input placeholder="Your email adress" class="w3-input" name="newTaskDescription" id="inputDescription" type="text" ng-model="newTask.description" required>
+                <input placeholder="Your email adress" class="w3-input mainLoginInput" name="newTaskDescription" id="inputDescription" type="text" ng-model="newTask.description" required>
 			</p>
 			<p class="whatKindOfPlaylistPara">
 				What kind of playlist it should be?
@@ -79,8 +79,8 @@
             <p>     
                 <input class="w3-input lastInput" name="newTaskDescription" id="inputDescription" type="text" ng-model="newTask.description" required>
 			</p>
-			<div>
-				<label for="files" class="btn addAttachments">+ Add attachments:<br><span>...images or files of anything you need to describe your idea</span></label>
+			<div class="addAttachmentsDiv">
+				<label for="files" class="btn addAttachments"><span class="plus">+</span> Add attachments:<br><span>...images or files of anything you need to describe your idea</span></label>
 				<input id="files" style="visibility:hidden;" type="file">
 			</div>
     </form>
