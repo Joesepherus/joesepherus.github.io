@@ -430,6 +430,7 @@ div.leftSection {
 p.descriptionCategories {
 	margin-bottom: 30px;
 	font-family: "Gotham-light";
+	letter-spacing: 1px;		
 }
 
 
@@ -485,6 +486,7 @@ h4.categories{
 
 h3 {
 	font-family: "Gotham-bold";	
+	letter-spacing: 3px;	
 }
 
 svg.vinylLogo {
