@@ -404,7 +404,21 @@
 <script>
 	$(document).ready(function () {
 		//$(document).on("scroll", onScroll);
- 
+		var currentDiv = $('.playlist')[0];
+		var currentImg = $(currentDiv).find(".playlistImg");
+		var totalHeight = 300;
+		$(currentDiv).find("div.description")
+			.css({
+				// Set height to prevent instant jumpdown when max height is removed
+				"height": $(currentDiv).find("div.description").height(),
+				"max-height": 9999
+			})
+			.animate({
+				"height": totalHeight
+			}, 2000);
+		$(currentImg).css('opacity', 1);
+		$(currentDiv).find("p.description").removeClass("descriptionPara");
+		$(currentDiv).find("p.description").addClass("descHighlited");
 	});
 
 var sectionScrolling = false;

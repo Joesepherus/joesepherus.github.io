@@ -158,10 +158,10 @@ i {
   text-align: center;
   background: white;
   color: #fff;
-  width: 13px;
-  height: 13px;
+  width: 10px;
+  height: 10px;
   line-height: 35px;
-  margin-left: -7px;
+  margin-left: -5px;
   border: 1px solid black;
   border-top-right-radius: 50%;
   border-top-left-radius: 50%;
@@ -176,8 +176,8 @@ i {
 .tl-heading h3 {
   	color: grey;
   	padding-left: 100px;
-  	margin-top: -3px;
-	font-family: "Gotham-bold";	  
+  	margin-top: -4px;
+	font-family: "Gotham-light";	  
 	font-size: 16px;
 }
 
@@ -408,7 +408,7 @@ div.about {
 img.categories {
 	height: auto; 
     width: auto; 
-    max-width: 80%; 
+    max-width: 100%; 
 	margin-right: 50px;
 	margin-bottom: 150px;
 	margin-top: 30px;
@@ -425,6 +425,7 @@ img.categories {
 
 .img-with-text img {
 	display:block;
+	margin: 0!important;
 }
 
 div.categories {
@@ -528,7 +529,11 @@ div.vinyl {
 }
 
 .childLogos {
-  transition: all .5s;
+  	transition: all .5s;
+	padding-right: 0px;
+	padding-left: 0px;
+	width: 30%;
+	margin-right: 18px;
 }
 
 .childLogos:hover {
