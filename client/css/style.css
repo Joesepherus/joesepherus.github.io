@@ -38,9 +38,6 @@ img { border: 0; max-width: 100%; }
   	list-style: none;
   	padding: 70px 0 20px;
 	position: fixed;
-	margin-left: 100px;
-	margin-top: 150px;
-	  
 }
 
 i {
@@ -177,9 +174,11 @@ i {
 /** timeline content **/
 
 .tl-heading h3 {
-  color: grey;
-  padding-left: 100px;
-  padding-top: 2px;
+  	color: grey;
+  	padding-left: 100px;
+  	margin-top: -3px;
+	font-family: "Gotham-bold";	  
+	font-size: 16px;
 }
 
 .tl-body p, .tl-body ul {
@@ -254,6 +253,7 @@ p {
 
 .playlistImg {
 	width: 100%!important;
+	height: auto;
 	margin-top: 50px;
 	opacity: 0.5;
 	cursor: pointer;
@@ -262,11 +262,14 @@ p {
 .playlistTxt {
 	margin-top: 50px;
 	height: 260px;
-	width: 1000px;
-	padding-left: 250px;
+	width: 500px;
+	font-family: "Gotham-light";
+	letter-spacing: 1px;	
+	font-size: 12px;
 }
 
 .date {
+	width: 200px;
     text-align: right;
 }
 
@@ -298,7 +301,9 @@ div.description {
 
 
 .parent {
-	height: 0px;
+	height: 200px;
+	width: 200px;
+	margin-left: -50px;
 }
 
 .child {
@@ -328,7 +333,7 @@ div.description {
 .testingDiv {
 	margin-top: 44px;
 	height: 3000px;
-	padding-left: 200px;
+	padding-left: 100px;
 }
 
 
@@ -344,6 +349,9 @@ svg {
   fill: #ea5700;
 }
 
+div.about {
+	margin-left: 16px;
+}
 
 
 /*.description .read-more { 
@@ -528,7 +536,6 @@ div.vinyl {
 }
 
 .footer {
-  position: absolute;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
