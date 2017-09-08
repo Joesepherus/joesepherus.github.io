@@ -262,7 +262,7 @@ p {
 .playlistTxt {
 	margin-top: 50px;
 	height: 260px;
-	width: 500px;
+	width: 400px;
 	font-family: "Gotham-light";
 	letter-spacing: 1px;	
 	font-size: 12px;
@@ -539,7 +539,7 @@ div.vinyl {
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 60px;
+  height: 40px;
 }
 
 .divider {
