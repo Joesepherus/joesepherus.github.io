@@ -254,15 +254,13 @@ p {
 .playlistImg {
 	width: 100%!important;
 	height: auto;
-	margin-top: 50px;
 	opacity: 0.5;
 	cursor: pointer;
 }
 
 .playlistTxt {
-	margin-top: 50px;
-	height: 260px;
-	width: 400px;
+	height: 150px;
+	width: 450px;
 	font-family: "Gotham-light";
 	letter-spacing: 1px;	
 	font-size: 12px;
@@ -296,7 +294,7 @@ div.description {
 }
 
 .playlist {
-	height: 310px;
+	height: 200px;
 }
 
 
@@ -331,9 +329,9 @@ div.description {
 }
 
 .testingDiv {
-	margin-top: 44px;
-	height: 3000px;
+	margin-top: 34px;
 	padding-left: 100px;
+	height: 3000px;
 }
 
 
@@ -353,6 +351,10 @@ div.about {
 	margin-left: 16px;
 }
 
+iframe {
+	margin-top: 120px;
+	margin-left: 60px;
+}
 
 /*.description .read-more { 
   position: absolute; 
