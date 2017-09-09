@@ -403,6 +403,7 @@
 </html>
 <script>
 	$(document).ready(function () {
+		$(document).scrollTop(0);
 		//$(document).on("scroll", onScroll);
 		var currentDiv = $('.playlist')[0];
 		var currentImg = $(currentDiv).find(".playlistImg");
@@ -466,7 +467,16 @@ var sectionScrolling = false;
 				var div = 0; // current div
 	
 		var scrollTimer, lastScrollFireTime = 0;
-		$(document.body).on('DOMMouseScroll mousewheel', function (e) {
+		var scrollDirection = "";
+		window.addEventListener('wheel', function(event){
+			if(event.deltaY < 0){
+				console.log("LAMOOOOOO");
+				scrollDirection = "up";
+			}
+			else {
+				console.log("WHY");
+				scrollDirection = "down";
+			}
 			
 			console.log("DIV: " + div);
 			if (sectionScrolling) {
@@ -477,8 +487,8 @@ var sectionScrolling = false;
 				$('.playlist').each(function () {
 					var currentDiv = $(this);
 					var currentImg = $(currentDiv).find(".playlistImg");
-					//console.log(currentImg.offset().top);
-					if (currentImg.offset().top - 150 <= scrollPosition && currentImg.offset().top + currentImg.height() - 51 > scrollPosition) {
+					console.log(currentImg.offset().top - 210, scrollPosition + 115,  currentImg.offset().top + currentImg.height() - 60);
+					if (currentImg.offset().top - 210 <= scrollPosition + 115 && currentImg.offset().top + currentImg.height() - 60 > scrollPosition  + 115) {
 						totalHeight = 300;
 						if (!isNaN(i)){
 							//console.log("DICK" + i);
@@ -509,7 +519,6 @@ var sectionScrolling = false;
 				});
 			}
 			else {
-				console.log("????");
 				processScroll();
 					/*var minScrollTime = 2000;
 					var now = new Date().getTime();
@@ -533,8 +542,7 @@ var sectionScrolling = false;
 						
 					var divs = $('.playlist');
 					var dir = 'up'; // wheel scroll direction
-						e.preventDefault();
-						if (e.originalEvent.detail > 0 || e.originalEvent.wheelDelta < 0) {
+						if (scrollDirection == "down") {
 							dir = 'down';
 								//console.log(divs[div].offset().top);
 							var scroll;
@@ -660,8 +668,7 @@ var sectionScrolling = false;
 					$('html,body').scrollTop(divs.eq(div).offset().top);
 				});*/
 			}
-
-			});
+		});
 
 
 
