@@ -24,6 +24,12 @@ body {
 	src: local('fonts/Gotham-book/GothamBook'), url('fonts/Gotham-book/GothamBook.woff') format('woff'), url('fonts/Gotham-book/GothamBook.ttf') format('truetype');
 }
 
+@font-face {
+	font-family: 'testing';
+	src: url('fonts/fonts/icomoon.eot');
+	src: local('fonts/fonts/icomoon'), url('fonts/fonts/icomoon.woff') format('woff'), url('fonts/fonts/icomoon.tff') format('truetype');
+}
+
 img { border: 0; max-width: 100%; }
 
 .page-header h1 {
@@ -832,8 +838,26 @@ a:last-child {
 	margin-top: -20px;
 }
 
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+.icon-video {
+  width: 1.013671875em;
+}
 
+.iconTest {
+	font-family: "testing";
+	font-size: 72px;
 
-
+	background: -webkit-gradient(linear, left top, left bottom, from(#ea5700), to(#f17700));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	display: initial;
+}
 
 
