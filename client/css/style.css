@@ -353,7 +353,7 @@ div.about {
 
 iframe {
 	margin-top: 120px;
-	margin-left: 60px;
+	margin-left: 40px;
 }
 
 /*.description .read-more { 
@@ -667,3 +667,72 @@ textarea {
 	letter-spacing: 1px;	
 	font-size: 12px;			
 }
+
+/* music intro */
+
+body.intro {
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, red, yellow); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, red, yellow); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, red, yellow); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, red, yellow); /* Standard syntax */
+}
+
+.headphonesIcon {
+	width: 100px;
+	height: 100px;
+	fill: white;
+	margin-top: 250px;
+}
+
+button.wantMusic {
+ 	background: red; /* For browsers that do not support gradients */	
+	background: -webkit-linear-gradient(left, #ea5700 , #f17700); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #ea5700 , #f17700); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #ea5700 , #f17700); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #ea5700 , #f17700); /* Standard */
+	color: white;
+	font-family: "Gotham-book";
+	letter-spacing: 1px;
+	font-size: 15px;
+
+}
+
+    .main-container {
+      float: left;
+      position: relative;
+      left: 50%;
+    }
+    .fixer-container {
+      float: left;
+      position: relative;
+      left: -50%;
+	}
+	
+#mySidebar {
+	left: -300px;
+	display:block;
+}
+
+* { margin: 0; padding: 0;}
+/*
+a { 
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  display: block;
+}
+
+a:first-child {
+  -webkit-clip-path: polygon(0 0, 0 100vh, 100% 100vh);
+  clip-path: polygon(0 0, 0 100vh, 100% 100vh);
+  background: #d6d6d6;
+}
+
+a:last-child {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100vh);
+  clip-path: polygon(0 0, 0 100vh, 100% 100vh);
+  background: #212121;
+}*/
