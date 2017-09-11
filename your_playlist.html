@@ -77,7 +77,7 @@
 				What kind of playlist it should be?
 			</p>
 			<p>
-                <textarea class="w3-input" name="newTaskTitle" cols="40" rows="3" required></textarea>                 
+                <textarea class="w3-input" name="newFormularDescription" cols="40" rows="3" required></textarea>                 
             </p>
 			<div class="addAttachmentsDiv">
 				<label for="files" class="btn addAttachments"><span class="plus">+</span> Add attachments:<br><span>...images or files of anything you need to describe your idea</span></label>
@@ -201,5 +201,11 @@
 </body>
 </html>
 <script>
+window.onclick = function(event) {
 
+}
+
+$('.whatKindOfPlaylistPara').click(function () {
+	$("[name=newFormularDescription]").focus();
+});
 </script>

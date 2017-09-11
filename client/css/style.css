@@ -588,7 +588,7 @@ h3 span {
 }
 
 .newYourPlaylistForm {
-	margin-top: 70px;
+	margin-top: 50px;
 }
 
 
@@ -854,7 +854,7 @@ a:last-child {
 	font-family: "testing";
 	font-size: 72px;
 
-	background: -webkit-gradient(linear, left top, left bottom, from(#ea5700), to(#f17700));
+	background: -webkit-gradient(linear, left top, left bottom, from(#f17700), to(#ea5700));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	display: initial;
