@@ -79,20 +79,17 @@
         <div class="modal-dialog">
             <!-- Modal content-->
             <div class="modal-content">
-                <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Modal Header</h4>
-                </div>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>				
                 <div class="modal-body">
-                    <form name="newYourPlaylistForm" id="newTaskForm" class="w3-container newYourPlaylistForm" method="post" ng-submit="addTask()">
+                    <form name="newYourPlaylistForm" id="newTaskForm" class="w3-container newYourPlaylistForm emailModalForm" method="post" ng-submit="addTask()">
                         <p>
-                            <input placeholder="Your phone number" class="w3-input mainLoginInput" name="newTaskTitle" id="inputTitle" type="text" ng-model="newTask.title" required>
+                            <input placeholder="Your name" class="w3-input mainLoginInput" name="newTaskTitle" id="inputTitle" type="text" ng-model="newTask.title" required>
                         </p>
                         <p>     
-                            <input placeholder="Your email adress" class="w3-input mainLoginInput" name="newTaskDescription" id="inputDescription" type="text" ng-model="newTask.description" required>
+                            <input placeholder="email address" class="w3-input mainLoginInput" name="newTaskDescription" id="inputDescription" type="text" ng-model="newTask.description" required>
                         </p>
                         <p class="whatKindOfPlaylistPara">
-                            What kind of playlist it should be?
+                            What is on your mind?
                         </p>
                         <p>
                             <textarea class="w3-input" name="newFormularDescription" cols="40" rows="3" required></textarea>                 
@@ -100,8 +97,11 @@
                         <div class="addAttachmentsDiv">
                             <label for="files" class="btn addAttachments"><span class="plus">+</span> Add attachments:<br><span>...images or files of anything you need to describe your idea</span></label>
                             <input id="files" style="visibility:hidden;" type="file">
-                        </div>
-                    </form>
+						</div>
+						<button class="w3-button w3-black w3-round-xxlarge wantMusic submitModalButton" onclick="w3_open()">
+							Submit
+						</button>
+					</form>
                 </div>
             </div>
         </div>
@@ -253,14 +253,14 @@
 var str = 'It began as a good feeling after organizing music into playlists in 2011. After a few years of doing this hobby, my friends told me to share my music playlists with them. Then the number of listeners started to grow to the point, when there was more people than I could handle to chat with individually. Thus I created a facebook fanpage, where currently, WE are creating these great playlists!';    
 var spans = '<span>' + str.split('').join('</span><span>') + '</span>';
 $(spans).hide().appendTo('.textTyping').each(function (i) {
-    $(this).delay(20 * i).css({
+    $(this).delay(40 * i).css({
         display: 'inline',
         opacity: 0
     }).animate({
         opacity: 1
     }, 100);
 
-    $(".musicAbout").delay(9000).fadeIn(700);
+    $(".musicAbout").delay(16000).fadeIn(700);
 });
 
 

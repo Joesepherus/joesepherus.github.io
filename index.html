@@ -68,9 +68,9 @@
   <ul class="timeline">
 	
     <li class="timeline-inverted">
-      	<div class="tl-circ"></div>
+      	<div class="tl-circ selectedYearTimeline"></div>
         <div class="tl-heading">
-          	<h3>2017</h3>
+          	<h3 class="selectedYearTimeline">2017</h3>
         </div>
 	</li>
 
@@ -95,7 +95,7 @@
         </div>
 	</li>
 
-	<li class="timeline-inverted">
+	<li class="timeline-inverted lastTimeline">
       	<div class="tl-circ"></div>
         <div class="tl-heading">
           	<h3>2013</h3>
@@ -406,20 +406,17 @@
         <div class="modal-dialog">
             <!-- Modal content-->
             <div class="modal-content">
-                <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Modal Header</h4>
-                </div>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>				
                 <div class="modal-body">
-                    <form name="newYourPlaylistForm" id="newTaskForm" class="w3-container newYourPlaylistForm" method="post" ng-submit="addTask()">
+                    <form name="newYourPlaylistForm" id="newTaskForm" class="w3-container newYourPlaylistForm emailModalForm" method="post" ng-submit="addTask()">
                         <p>
-                            <input placeholder="Your phone number" class="w3-input mainLoginInput" name="newTaskTitle" id="inputTitle" type="text" ng-model="newTask.title" required>
+                            <input placeholder="Your name" class="w3-input mainLoginInput" name="newTaskTitle" id="inputTitle" type="text" ng-model="newTask.title" required>
                         </p>
                         <p>     
-                            <input placeholder="Your email adress" class="w3-input mainLoginInput" name="newTaskDescription" id="inputDescription" type="text" ng-model="newTask.description" required>
+                            <input placeholder="email address" class="w3-input mainLoginInput" name="newTaskDescription" id="inputDescription" type="text" ng-model="newTask.description" required>
                         </p>
                         <p class="whatKindOfPlaylistPara">
-                            What kind of playlist it should be?
+                            What is on your mind?
                         </p>
                         <p>
                             <textarea class="w3-input" name="newFormularDescription" cols="40" rows="3" required></textarea>                 
@@ -427,8 +424,11 @@
                         <div class="addAttachmentsDiv">
                             <label for="files" class="btn addAttachments"><span class="plus">+</span> Add attachments:<br><span>...images or files of anything you need to describe your idea</span></label>
                             <input id="files" style="visibility:hidden;" type="file">
-                        </div>
-                    </form>
+						</div>
+						<button class="w3-button w3-black w3-round-xxlarge wantMusic submitModalButton" onclick="w3_open()">
+							Submit
+						</button>
+					</form>
                 </div>
             </div>
         </div>
@@ -764,4 +764,7 @@
 			}
 		});*/
 
+	$('.whatKindOfPlaylistPara').click(function () {
+		$("[name=newFormularDescription]").focus();
+	});
 </script>
