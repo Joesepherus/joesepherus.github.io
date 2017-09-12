@@ -934,7 +934,10 @@ i {
 
 p.textTyping {
 
+}
 
-
+button.email {
+	border: none;
+	background: transparent;
 }
 
