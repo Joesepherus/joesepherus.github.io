@@ -21,7 +21,7 @@
 
 <div class="playlistLogoDivMusicIntro">
   <span class="tooltiptext">choose me</span>
-    <a href="index.html">
+    <a href="music_about.html">
     <svg class="playlistLogoMusicIntro" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.7 8.7"><defs><style>.cls-1{fill-rule:evenodd;}</style></defs><title>playlist</title><path d="M8.7,6.6a2.2,2.2,0,1,0,2.2,2.2A2.2,2.2,0,0,0,8.7,6.6h0Zm0,4a1.8,1.8,0,1,1,1.8-1.8,1.8,1.8,0,0,1-1.8,1.8h0Zm0,0" transform="translate(-2.2 -2.3)"/><path d="M9.5,8.6H8.9V8a0.2,0.2,0,1,0-.4,0V8.6H7.9a0.2,0.2,0,1,0,0,.4H8.5V9.6a0.2,0.2,0,0,0,.4,0V9H9.5a0.2,0.2,0,0,0,0-.4h0Zm0,0" transform="translate(-2.2 -2.3)"/><path class="cls-1" d="M2.4,2.7H7.9a0.2,0.2,0,1,0,0-.4H2.4a0.2,0.2,0,1,0,0,.4h0ZM6.9,6.2H2.4a0.2,0.2,0,0,0,0,.4H6.9a0.2,0.2,0,0,0,0-.4h0Zm1-2H2.4a0.2,0.2,0,1,0,0,.4H7.9a0.2,0.2,0,1,0,0-.4h0Zm-2.4,4H2.4a0.2,0.2,0,0,0,0,.4H5.6a0.2,0.2,0,0,0,0-.4h0Zm0,0" transform="translate(-2.2 -2.3)"/>
     </svg>
     <p class="pTest">PLAYLISTS</p>
@@ -62,6 +62,11 @@
     <button class="w3-button w3-black w3-round-xxlarge wantMusic" onclick="w3_open()">
         YES I WANT MUSIC
     </button>
+  <div class="languages">
+      <span class="selectedLanguage">EN</span>
+      <span>|</span>
+      <span>SK</span>
+  </div>
   </div>
     </div>
 </div>
@@ -87,10 +92,10 @@ function w3_open() {
         $("#mySidebar")
 			.animate({
                 left: "0",
-                width: "300"
-            }, 700);
+                width: "400"
+            }, 2000);
 
-        $(".playlistLogoDivMusicIntro .tooltiptext").delay(700).fadeIn(700);
+        $(".playlistLogoDivMusicIntro .tooltiptext").delay(2000).fadeIn(700);
 }
 
 $("#mySidebar div").click(function(e) {
@@ -100,16 +105,16 @@ $("#mySidebar div").click(function(e) {
 
 window.onclick = function(event) {
 		if (!event.target.matches('#mySidebar') && !event.target.matches('.wantMusic')) {
-            $(".playlistLogoDivMusicIntro .tooltiptext").delay(700).fadeOut(1);
+            $(".playlistLogoDivMusicIntro .tooltiptext").fadeOut(1);
             
 			$("#mySidebar")
 			.animate({
                 left: "-300",
                 width: "0"
-            }, 700);
+            }, 2000);
             
 		}
 
-	}
+    }
 
 </script>

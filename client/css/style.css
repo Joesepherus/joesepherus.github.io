@@ -42,8 +42,9 @@ img { border: 0; max-width: 100%; }
 /** timeline box structure **/
 .timeline {
   	list-style: none;
-  	padding: 70px 0 20px;
+  	padding: 92px 0 20px;
 	position: fixed;
+	margin-left: 8px;
 }
 
 i {
@@ -51,32 +52,32 @@ i {
 }
 
 .timeline:before {
-  top: 0;
-  bottom: 0;
-  position: absolute;
-  content: " ";
-  width: 2px;
-  background-color: #d3d7d4;
-  left: 50%;
-  margin-left: -1.5px;
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	content: " ";
+	width: 2px;
+	background-color: #d3d7d4;
+	left: 50%;
+	margin-left: -1.5px;
 }
 
 .tldate {
-  display: block;
-  width: 200px;
-  background: #414141;
-  border: 3px solid #212121;
-  color: #ededed;
-  margin: 0 auto;
-  padding: 3px 0;
-  font-weight: bold;
-  text-align: center;
-  -webkit-box-shadow: 0 0 11px rgba(0,0,0,0.35);
+	display: block;
+	width: 200px;
+	background: #414141;
+	border: 3px solid #212121;
+	color: #ededed;
+	margin: 0 auto;
+	padding: 3px 0;
+	font-weight: bold;
+	text-align: center;
+	-webkit-box-shadow: 0 0 11px rgba(0,0,0,0.35);
 }
 
 .timeline li {
   	position: relative;
-	margin-bottom: 70px;
+	margin-bottom: 60px;
 }
 
 .timeline li:before, .timeline li:after {
@@ -159,21 +160,21 @@ i {
 
 /** timeline circle icons **/
 .timeline li .tl-circ {
-  position: absolute;
-  left: 50%;
-  text-align: center;
-  background: white;
-  color: #fff;
-  width: 10px;
-  height: 10px;
-  line-height: 35px;
-  margin-left: -5px;
-  border: 1px solid black;
-  border-top-right-radius: 50%;
-  border-top-left-radius: 50%;
-  border-bottom-right-radius: 50%;
-  border-bottom-left-radius: 50%;
-  z-index: 99999;
+	position: absolute;
+	left: 50%;
+	text-align: center;
+	background: white;
+	color: #fff;
+	width: 10px;
+	height: 10px;
+	line-height: 35px;
+	margin-left: -5px;
+	border: 2px solid #D3D7D4;
+	border-top-right-radius: 50%;
+	border-top-left-radius: 50%;
+	border-bottom-right-radius: 50%;
+	border-bottom-left-radius: 50%;
+	z-index: 99999;
 }
 
 
@@ -300,7 +301,7 @@ div.description {
 }
 
 .playlist {
-	height: 200px;
+	height: 220px;
 }
 
 
@@ -396,7 +397,7 @@ iframe {
 			margin: 0 30px 0 0;
 		}
  
-		a { color: #4D4D4D;  font-family: sans-serif; text-transform: uppercase; text-decoration: none; line-height: 42px; }
+		a { color: #4D4D4D;  font-family: sans-serif; text-transform: uppercase; text-decoration: none;  }
 		.active { color: #2dbccb; }
  
 		.content {
@@ -455,6 +456,8 @@ p.descriptionCategories {
 	letter-spacing: 1px;	
 	font-size: 12px;	
 }
+
+
 
 
 
@@ -686,10 +689,10 @@ textarea {
 
 body.intro {
   background: red; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left top, red, yellow); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom right, red, yellow); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom right, red, yellow); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom right, red, yellow); /* Standard syntax */
+  background: -webkit-linear-gradient(left top, #dd5600, #fab700); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #dd5600, #fab700); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #dd5600, #fab700); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #dd5600, #fab700); /* Standard syntax */
 }
 
 .headphonesIcon {
@@ -792,7 +795,7 @@ a:last-child {
     top: 15px;
 	left: 80%;
 	z-index: 999;
-	margin-left: 50px;
+	margin-left: 70px;
 	visibility: visible;
 	display: none;
 	font-family: "Gotham-book";
@@ -816,7 +819,7 @@ a:last-child {
 	border-radius: 25px;
 	background: transparent;
     text-align: center;
-	width: 150px!important;	
+	width: 200px!important;	
     position: relative;
 	margin-top: 200px;	
 }
@@ -828,20 +831,20 @@ a:last-child {
 }
 
 .videoLogoDivMusicIntro {
-	width: 150px!important;
+	width: 200px!important;
 	text-align: center;
 	margin-top: 100px;
 }
 
 .videoLogoMusicIntro {
 	position: relative;
-	width: 50%!important;
+	width: 40%!important;
 	height: auto;
 	
 }
 
 .pTest {
-	display: inline-block;   
+	font-family: "Gotham-light";
 	color: #ea5700;
 	margin-top: -20px;
 }
@@ -879,5 +882,59 @@ div.socialMediaDivider {
 }
 
 div.email {
-	margin-top: 4px; 
+	margin-top: 7px; 
 }
+
+/* music_about.html */
+
+div.musicAbout {
+	margin-top: 300px;
+}
+
+button.musicAbout {
+	float: right;
+	font-family: "Gotham-light";
+	display: none;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+div.languages {
+	font-family: "Gotham-light";
+	font-size: 12px;
+	text-align: center;
+	margin-top: 20px;
+	color: white;
+}
+
+span.selectedLanguage {
+	border-bottom: solid white 1px;
+}
+
+div.languagesDefault {
+	font-family: "Gotham-light";
+	font-size: 12px;
+	text-align: center;
+	margin-top: 5px;
+	color: #ea5700;
+}
+
+span.selectedLanguageDefault {
+	border-bottom: solid #ea5700 1px;
+}
+
+i {
+	font-size: 11px!important;
+}
+
+/* text typing animation from -*/
+
+p.textTyping {
+
+
+
+}
+
