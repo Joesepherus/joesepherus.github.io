@@ -606,7 +606,55 @@
 		});
 	});
 
-	var sectionScrolling = true;
+	// new scroll, the pleb scroll
+	window.onscroll = function (e) {  
+		var scrollValue = $(window).scrollTop();
+		if (scrollValue <= 107) {
+			divNumber = Math.floor(scrollValue / 100) + 1; 
+		}
+		else {
+			scrollValue -= 107;
+			divNumber = Math.floor(scrollValue / 220) + 2; 			
+		}
+		console.log("the scroll value =" + scrollValue + " and divNumber = " + divNumber);
+
+		var i = 1;
+		$('.playlist').each(function () {
+					var currentDiv = $(this);
+					var currentImg = $(currentDiv).find(".playlistImg");
+					if (i == divNumber) {
+						totalHeight = 600;
+						if (!isNaN(i)){
+							div = i;
+						}
+						$(this).closest(".playlist").find("div.description")
+							.css({
+								// Set height to prevent instant jumpdown when max height is removed
+								"height": $(this).closest(".playlist").find("div.description").height(),
+								"max-height": 9999
+							})
+							.animate({
+								"height": totalHeight
+							}, 2000);
+						$(currentImg).css('opacity', 1);
+						$(currentDiv).find("p.description").removeClass("descriptionPara");
+						$(currentDiv).find("p.description").addClass("descHighlited");
+						$(currentDiv).find("iframe").css("visibility", "visible");										
+					}
+					else{
+						$(currentImg).css('opacity', 0.5);
+						$(currentDiv).find("p.description").addClass("description");
+						$(currentDiv).find("p.description").removeClass("descHighlited");
+						$(currentDiv).find("div.description").css("height", 60);	
+							//console.log("DOKOKOTOVA " + i + " " +$(currentDiv).find("inframe").visibility();						
+						$(currentDiv).find("iframe").css("visibility", "hidden");				
+						$(this).closest(".playlist").find("div.description").stop( true, true ).animate();
+					}
+					i++;
+				});
+		
+	} 
+	/*var sectionScrolling = true;
 
 
 				var div = 0; // current div
@@ -675,6 +723,6 @@
 					i++;
 				});
 			}
-		});
+		});*/
 
 </script>
