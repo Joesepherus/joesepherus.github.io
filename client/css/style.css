@@ -370,10 +370,15 @@ svg {
 
 div.about {
 	margin-left: 16px;
+	height:200px;
+	
 }
 
 iframe {
 	margin-left: 40px;
+	margin-top: 90px;
+	position:relative;
+	z-index: 9999;
 }
 
 /*.description .read-more { 
@@ -996,3 +1001,24 @@ button.close {
 	margin-top: 20px!important;
 	margin-bottom: 20px!important;
 }
+
+/*
+#bottom_fade {
+	margin-left: 50px;	
+	width: 1000px;
+	height: 200px;
+	z-index: 999999;
+	position: fixed;
+	bottom: 0px;
+	background: url("../css/img/bottom-fade.png") bottom center no-repeat;
+}
+
+#top_fade {
+	margin-left: 50px;
+	width: 1000px;
+	height: 200px;
+	z-index: 999999;
+	position: fixed;
+	top: 0px;
+	background: url("../css/img/top-fade.png") bottom center no-repeat;
+} */
