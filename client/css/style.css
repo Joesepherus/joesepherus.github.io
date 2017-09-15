@@ -402,11 +402,7 @@ iframe {
 			height: 80px;
 			background: #fff;
 		}
-		nav {
-			width: 960px;
-			height: 80px;
-			margin: 0 auto;
-		}
+
 		nav ul {
 			margin: 20px 0 0;
 		}
@@ -427,7 +423,6 @@ iframe {
 		#home { background: #2dbccb; }
 		#about { background: #f6c362; }
 		#services { background-color: #eb7e7f; }
-		#contact { background-color: #415c71; }
 		
 
 /* Categories Website */
@@ -1120,12 +1115,12 @@ span.threeDots {
 	overflow: hidden;
   }
   
-  .fade, .fade2 {
+.fade, .fade2 {
 	  opacity: 100;
 	position: relative;
 	height: 5em; /* exactly three lines */
   }
-  .fade:after {
+.fade:after {
 	content: "";
 	text-align: right;
 	position: absolute;
@@ -1135,7 +1130,7 @@ span.threeDots {
 	height: 1.2em;
 	background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(248,248,248) 50%);
   }
-  .fade2:after {
+.fade2:after {
 	content: "";
 	text-align: right;
 	position: absolute;
@@ -1144,4 +1139,430 @@ span.threeDots {
 	width: 100%;
 	height: 1.2em;
 	background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(252,252,252) 50%);
-  }
+}
+
+/* ======= branding.html  ======= */ 
+
+body.brandingBody {
+	background: -webkit-linear-gradient(left, #3405AA , #1C017E); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #3405AA , #1C017E); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #3405AA , #1C017E); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #3405AA , #1C017E); /* Standard syntax (must be last) */
+}
+
+div.brandingMainDiv {
+	margin-top: 200px;
+	height: 500px;
+	
+}
+
+.brandingImg {
+	width: 100%!important;
+	height: auto;
+	cursor: pointer;
+}
+
+.brandingImgDiv{
+	width: 300px;
+	height: 450px;
+	-webkit-mask-size: 300px 450px;
+	-webkit-mask-image: -webkit-gradient(linear, center bottom, center top, 
+	   color-stop(0.250,  rgba(0,0,0,0)),
+	   color-stop(0.80,  rgba(0,0,0,1)));
+}
+
+.brandingBasicFont {
+	font-family: "Gotham-light";
+	font-size: 12px;
+	color: white;
+}
+
+.navbar-default {
+	background-color: transparent;
+	border-color: transparent;
+}
+
+.container #navbar {
+	background-color: #280395;
+	border-color: transparent;
+}
+
+.navbar-brand {
+	font-family: "Gotham-light";
+	font-size: 15px;
+	color: white!important;
+}
+
+#myTab {
+	float: right;
+}
+
+.languageLi {
+	margin-right: -15px;
+}
+
+.brandingDesc {
+	margin-left: 50px;
+}
+
+.brandingMoreDetails {
+	font-family: "Gotham-bold";
+	font-size: 15px;
+	color: white!important;
+	margin-top: -10px;
+}
+
+.navbar-inverse {
+	background-color: #270393;
+}
+
+.brandingTimeline {
+	position: relative!important;
+	margin-left: 350px!important;
+	padding-top: 350px!important;
+	margin-top: 30px;
+	width: 100px;
+}
+
+.branding-tl-circ {
+	background: #2A0399!important;
+	z-index: 1!important;
+}
+
+.brandingTimelineDiv {
+	height: 1000px!important;
+}
+
+.authorPictureDiv {
+	background: red;
+	height: 200px;
+	width: 200px;
+	border-radius: 500px;
+	margin: 20px;
+	-webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
+	-moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
+	box-shadow: 0px 0px 80px 10px rgba(0, 0, 0, 1); 
+	padding: 0;
+	margin-left: 150;
+}
+
+.authorPictureImg {
+	height: 200px;
+	width: 200px;
+	border-radius: 500px;
+}
+
+h1 {
+	font-family: "Gotham-bold";
+	color: white;
+}
+
+h1.big {
+	font-size: 100px;
+}
+
+h1.one {
+
+}
+
+h1.tree {
+	margin-top: -80px;
+	margin-left: 180px;
+}
+
+h1.slash {
+	margin-top: -100px;
+	margin-left: 90px;
+}
+
+.middle {
+	text-align: center;
+}
+
+.middleNumber {
+	text-align: center;
+	padding-right: 100px;
+}
+
+h3 {
+	font-family: "Gotham-book";
+	color: white;
+	margin-left: 100px;
+}
+
+.brandingInput {
+	color: white!important;
+}
+
+.brandingFormDiv {
+}
+
+.brandingFormDivParent {
+	display: flex;
+	justify-content: center;
+}
+
+.portfolioImgDiv {
+	width: 350px;
+	display: flex;
+	justify-content: center;
+}
+
+.portfolioImg {
+	width: 80%;
+	height: 450px!important;
+}
+
+.brandingImg {
+	width: 270px!important;
+	height: auto;
+	cursor: pointer;
+} 
+
+.collaborateLarge {
+	width: 200px;
+	height: 150px;
+	background-color: white;
+	margin-right: 50px;
+	margin-bottom: 40px
+}
+
+.collaborateSmall {
+	width: 138px;
+	height: 138px;
+	background-color: white;
+	margin-right: 50px;
+	margin-bottom: 40px
+}
+
+.regular-checkbox {
+	-webkit-appearance: none;
+	background-color: #fafafa;
+	border: 1px solid #cacece;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	padding: 9px;
+	border-radius: 3px;
+	display: inline-block;
+	position: relative;
+}
+
+.regular-checkbox:active, .regular-checkbox:checked:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.regular-checkbox:checked {
+	background-color: #e9ecee;
+	border: 1px solid #adb8c0;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+	color: #99a1a7;
+}
+
+.regular-checkbox:checked:after {
+	content: '\2714';
+	font-size: 14px;
+	position: absolute;
+	top: 0px;
+	left: 3px;
+	color: #99a1a7;
+}
+
+.big-checkbox {
+	padding: 18px;
+}
+
+.big-checkbox:checked:after {
+	font-size: 28px;
+	left: 6px;
+}
+
+label {
+	display: inline;
+}
+
+.regular-checkbox {
+	display: none;
+}
+
+.regular-checkbox + label {
+	background-color: #fafafa;
+	border: 1px solid #cacece;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	padding: 9px;
+	border-radius: 3px;
+	display: inline-block;
+	position: relative;
+}
+
+.regular-checkbox + label:active, .regular-checkbox:checked + label:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.regular-checkbox:checked + label {
+	background-color: #e9ecee;
+	border: 1px solid #adb8c0;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+	color: #99a1a7;
+}
+
+.regular-checkbox:checked + label:after {
+	content: '\2714';
+	font-size: 14px;
+	position: absolute;
+	top: 0px;
+	left: 3px;
+	color: #99a1a7;
+}
+
+.big-checkbox + label {
+	padding: 18px;
+}
+
+.big-checkbox:checked + label:after {
+	font-size: 28px;
+	left: 6px;
+}
+
+.tag {
+	font-family: Arial, sans-serif;
+	width: 200px;
+	position: relative;
+	top: 5px;
+	font-weight: bold;
+	text-transform: uppercase;
+	display: block;
+	float: left;
+}
+
+.radio-1 {
+	width: 193px;
+}
+
+.button-holder {
+	float: left;
+}
+
+.checkboxLargeDiv {
+	margin-left: 150px;
+	margin-top: 10px;
+}
+
+.checkboxSmallDiv {
+	margin-left: 90px;
+	margin-top: 10px;
+}
+
+input[type=checkbox].css-checkbox {
+	position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
+}
+
+input[type=checkbox].css-checkbox + label.css-label {
+	padding-left:55px;
+	height:50px; 
+	display:inline-block;
+	line-height:50px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	font-size:50px;
+	vertical-align:middle;
+	cursor:pointer;
+
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+	background-position: 0 -50px;
+}
+label.css-label {
+background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_7a51de2f6764739a60a1c57b7736eb7f.png);
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+.opacityHalf {
+	opacity: 0.5;
+}
+
+.opacityDiv {
+	height: 150px;
+	justify-content: center;
+}
+
+.opacityDivSmall {
+	height: 138px;
+	justify-content: center;
+}
+
+h1.biggest {
+	font-size: 170px;
+	margin-top: -25px;
+}
+
+h1.smaller {
+	font-size: 20px;
+	margin-top: -120px;
+}
+
+h1.bigger {
+	font-size: 140px;
+	margin-top: -25px;
+	margin-left: 80px;
+	margin-top: -170px;
+}
+
+.brandingFormName {
+	padding: 0;
+	width: 250px;
+	float: left;
+}
+
+.brandingFormPhone {
+	padding: 0;
+	width: 250px;
+	float: right;
+}
+
+.brandingImgDivSmall {
+	width: 80px;
+	height: 80px;
+	padding: 0;
+	margin-right: 20px;
+}
+
+.brandingImgSmaller {
+	width: 80px!important;
+	height: 80px!important;
+}
+
+.emptyBox {
+	width: 80px;
+	height: 80px;
+	background-color: #16015F;
+	display: flex;
+	justify-content: center;
+	padding: 0;
+}
+
+h1.anotherSmall {
+	font-size: 20px;
+	height: 20px;
+	opacity: 0.5;
+	margin-top: 25px;
+}
+
+.footer-bottom {
+    background-color: #280395 /*#048e16*/;
+    min-height: 25px;
+    width: 100%;
+}
+
+.bradingCollaborateDiv {
+	height: auto!important;
+}
+
+.bottomMedia {
+	float: left;
+	margin-left: 25px;
+}
