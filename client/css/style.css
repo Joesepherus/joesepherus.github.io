@@ -765,7 +765,7 @@ p.musicIntro {
 
 .theBiggie {
 	width: 0;
-	left: -300px;
+	left: 0px!important;
 	display: block;
 	background: linear-gradient(90deg, white 50%, transparent 50%);
 	border: none!Important;
@@ -841,6 +841,7 @@ a:last-child {
 	width: 200px!important;	
     position: relative;
 	margin-top: 200px;	
+	display: none;
 }
 
 .playlistLogoMusicIntro {
@@ -853,6 +854,7 @@ a:last-child {
 	width: 200px!important;
 	text-align: center;
 	margin-top: 100px;
+	display: none;
 }
 
 .videoLogoMusicIntro {
@@ -1336,7 +1338,7 @@ h3 {
 	width: 110px;
 	height: 138px;
 	background-color: white;
-	margin-right: 50px;
+	margin-right: 47px;
 	margin-bottom: 40px
 }
 

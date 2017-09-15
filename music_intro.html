@@ -93,8 +93,11 @@ function w3_open() {
 			.animate({
                 left: "0",
                 width: "400"
-            }, 2000);
+            }, 1000);
 
+        $(".playlistLogoDivMusicIntro").delay(1000).fadeIn(700);
+        $(".videoLogoDivMusicIntro").delay(1500).fadeIn(700);
+        
         $(".playlistLogoDivMusicIntro .tooltiptext").delay(2000).fadeIn(700);
 }
 
@@ -104,17 +107,17 @@ $("#mySidebar div").click(function(e) {
 })
 
 window.onclick = function(event) {
-		if (!event.target.matches('#mySidebar') && !event.target.matches('.wantMusic')) {
-            $(".playlistLogoDivMusicIntro .tooltiptext").fadeOut(1);
-            
-			$("#mySidebar")
-			.animate({
-                left: "-300",
-                width: "0"
-            }, 2000);
-            
-		}
-
-    }
+	if (!event.target.matches('#mySidebar') && !event.target.matches('.wantMusic')) {
+        $(".playlistLogoDivMusicIntro .tooltiptext").fadeOut(1);
+        $(".playlistLogoDivMusicIntro").fadeOut(1);
+        $(".videoLogoDivMusicIntro").fadeOut(1);
+        
+		$("#mySidebar")
+		.animate({
+            left: "-300",
+            width: "0"
+        }, 1000);
+	}
+}
 
 </script>
