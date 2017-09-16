@@ -14,9 +14,9 @@
 
 	
 </head>
-<body id="page-top" class="brandingBody">
+<body class="brandingBody">
 
-		<nav class="navbar navbar-inverse navbar-fixed-top">
+		<nav class="navbar navbar-inverse navbar-fixed-top brandingImgDiv2">
 		<div class="container-fluid">
 <div class="navbar-header">
       <a class="navbar-brand" href="#">Danjel</a>
@@ -35,23 +35,25 @@
 					<a class="navbar-brand js-scroll-trigger" href="#profile">PROFILE</a>
 				</li>
 				<li id="blog">
-					<a class="navbar-brand js-scroll-trigger" href="#collaborate">COLLABORATE</a>
+					<a class="navbar-brand js-scroll-trigger" href="#collaborateNav">COLLABORATE</a>
 				</li>
 				<li id="DRO">
 					<a class="navbar-brand js-scroll-trigger" href="#contact">CONTACT</a>
 				</li>
 				<li id="DRO">
-					<a class="navbar-brand js-scroll-trigger" href="#portfolio">PORTFOLIOS</a>
+					<a class="navbar-brand js-scroll-trigger" href="#portfolioNav">PORTFOLIO</a>
 				</li>
 			</ul>
 		</div>
+
 	</nav>
   
 
-<div id="top_fade"></div>
  
-<div class="container">
-	<div class="col-md-12 brandingMainDiv bradingCollaborateDiv">
+<div id="topAndProfile">
+	<div id="page-top" class="col-md-12 brandingMainDiv ">
+	<div class="container">
+		
 		<div class="">
 
 			<div class="brandingImgDiv col-md-4">
@@ -72,9 +74,12 @@
 			</div>
 		</div>
 	</div>
+	</div>
 
-	<div id="profile" class="col-md-12 brandingMainDiv brandingTimelineDiv bradingCollaborateDiv">
-			<div class="">
+	<div id="profile" class="col-md-12 brandingMainDiv brandingTimelineDiv ">
+		<div class="container">
+			
+		<div class="">
 	
 				<div class="col-md-4">
 					<div class="authorPictureDiv col-md-8">
@@ -134,8 +139,16 @@
 				</div>
 			</div>
 		</div>
+		</div>
+	</div>
+	
+	<div class="brandingDividerDiv2 col-md-12"> </div>
+	
+	<div id="collaborateNav" class="brandingDividerDiv col-md-12"> </div>
 
 		<div id="collaborate" class="col-md-12 brandingMainDiv bradingCollaborateDiv">
+			<div class="container">
+			
 			<div class="col-md-12">
 					<h1 class="middle">TIME MANAGMENT</h1>
 				</div>
@@ -159,6 +172,9 @@
 				<h1 class="big tree">3</h1>
 				<h3>Design</h3>				
 			</div>	
+			<div id="collaborateNav" class="col-md-12 brandingDividerDiv4">
+
+			</div>
 
 			<div class="col-md-12 brandingMainDiv brandingTimelineDiv bradingCollaborateDiv">
 					
@@ -286,9 +302,14 @@
 				</div>
 			</div>
 		</div>
+		</div>
 	
-	
-	<div id="portfolio" class="col-md-12 brandingMainDiv bradingCollaborateDiv">
+		<div id="portfolioNav" class="brandingDividerDiv3 col-md-12"> </div>
+
+		<div id="portfolio" class="col-md-12 ">
+	<div class="col-md-12 brandingMainDiv bradingCollaborateDiv">
+		<div class="container">
+			
 			<div class="">
 				<div class="brandingImgDiv portfolioImgDiv col-md-4">
 					<img class="portfolioImg" src="client\css\img\climate.jpg">
@@ -304,8 +325,11 @@
 
 			</div>
 		</div>
+	</div>
 
-	<div class="col-md-12 brandingMainDiv bradingCollaborateDiv">
+	<div class="col-md-12 brandingMainDiv ">
+			<div class="container">
+					
 		<div class="">
 
 			<div class="brandingImgDiv col-md-4">
@@ -329,6 +353,8 @@
 			</div>
 		</div>
 	</div>	
+	</div>
+</div>
 
 </div>
 
@@ -361,7 +387,6 @@
 
 </div>
 
-<div class="col-md-2 ">
 
 
 
@@ -410,7 +435,7 @@
 
 	</div>
 
-	<div class="footer-bottom">
+	<div class="footer-bottom col-md-12">
 		<div class="container bottomMedia">
 			<div class="socialMediaDivider">
 				<a href="https://www.facebook.com/danjel.zone">
@@ -473,4 +498,6 @@
     target: '#mainNav',
     offset: 54
   });
+
+
 </script>

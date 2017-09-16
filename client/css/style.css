@@ -1160,6 +1160,7 @@ body.brandingBody {
 div.brandingMainDiv {
 	margin-top: 200px;
 	height: 500px;
+	height: auto!important;
 	
 }
 
@@ -1169,13 +1170,22 @@ div.brandingMainDiv {
 	cursor: pointer;
 }
 
-.brandingImgDiv{
+.brandingImgDiv {
 	width: 300px;
 	height: 450px;
 	-webkit-mask-size: 300px 450px;
 	-webkit-mask-image: -webkit-gradient(linear, center bottom, center top, 
 	   color-stop(0.250,  rgba(0,0,0,0)),
 	   color-stop(0.80,  rgba(0,0,0,1)));
+}
+
+.brandingImgDiv2 {
+	height: 250px;
+	background: -webkit-gradient(linear, center bottom, center top, 
+	   color-stop(0.40,  transparent),
+	   color-stop(0.750,  #181568));
+
+
 }
 
 .brandingBasicFont {
@@ -1220,7 +1230,8 @@ div.brandingMainDiv {
 }
 
 .navbar-inverse {
-	background-color: #270393;
+	background-color: transparent;
+	border: none;
 }
 
 .brandingTimeline {
@@ -1560,16 +1571,78 @@ h1.anotherSmall {
 }
 
 .footer-bottom {
-    background-color: #280395 /*#048e16*/;
+    background-color: #180044 /*#048e16*/;
     min-height: 25px;
-    width: 100%;
+	width: 100%;
+	border: none;
 }
 
 .bradingCollaborateDiv {
 	height: auto!important;
+	margin-top: 0px!important;
 }
 
 .bottomMedia {
 	float: left;
 	margin-left: 25px;
+}
+
+#topAndProfile {
+	background: red; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(right top, #22004d, #004fa8); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom left, #22004d, #004fa8); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom left, #22004d, #004fa8); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom left, #22004d, #004fa8); /* Standard syntax */
+	overflow:auto; 	
+}
+
+#collaborate {
+    background: #0e2f83; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#132477, #0e2f83); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#132477, #0e2f83); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#132477, #0e2f83); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#132477, #0e2f83); /* Standard syntax */
+}
+
+.brandingDividerDiv {
+	height: 200px;
+	background: #004fa8; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#004fa8, #132477); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#004fa8, #132477); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#004fa8, #132477); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#004fa8, #132477); /* Standard syntax */
+}
+
+
+
+.brandingDividerDiv2 {
+	
+	height: 10px;
+	background: -webkit-gradient(linear, center bottom, center top, 
+	   color-stop(0.10,  #014DA6),
+	   color-stop(0.950,  #093A90));
+	position:relative;
+
+}
+
+#portfolio {
+	overflow: auto; 		
+	background: #200553; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#200553, #180044); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#200553, #180044); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#200553, #180044); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#200553, #180044); /* Standard syntax */
+}
+
+.brandingDividerDiv3 {
+	height: 200px;
+	background: #004fa8; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#0E2F83, #200553); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#0E2F83, #200553); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#0E2F83, #200553); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#0E2F83, #200553); /* Standard syntax */
+}
+
+.brandingDividerDiv4 {
+	height: 200px;
 }
