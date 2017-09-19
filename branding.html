@@ -22,11 +22,11 @@
       <a class="navbar-brand" href="#">Danjel</a>
     </div>
 			<ul id="myTab" class="nav navbar-nav">
-				<li id="EN" class="languageLi">
-					<a class="nav-item nav-link " data-toggle="tab" href="#!/todolist"><span class="selectedLanguage">EN</span></a>
+				<li id="EN" class="languageLi languagesLi">
+					<a class="nav-item nav-link " data-toggle="tab" href="#!/todolist"><span class="selectedLanguage language">EN</span></a>
 				</li>
-				<li id="SK">
-					<a class="nav-item nav-link" data-toggle="tab" href="#!/todolist">SK</a>
+				<li id="SK" class="languagesLi">
+					<a class="nav-item nav-link" data-toggle="tab" href="#!/todolist"><span class="language">SK</span></a>
 				</li>
 				<li id="QaA">
 					<a class="navbar-brand js-scroll-trigger" href="#page-top">ACTUAL</a>
@@ -266,6 +266,8 @@
 					</div>
 				</div>
 
+				<div class="brandingDividerDiv4 col-md-12"></div>
+
 				<div class="col-md-3 opacityDiv">
 						<h1 class="biggest one opacityHalf">3</h1>
 					<h1 class="smaller">CONTACT</h1>
@@ -298,6 +300,9 @@
 							<label for="files" class="btn addAttachments brandingInput"><span class="plus">+</span> Add attachments:<br><span>...images or files of anything you need to describe your idea</span></label>
 							<input id="files" style="visibility:hidden;" type="file">
 						</div>
+						<button class="w3-button w3-black w3-round-xxlarge wantMusic submitModalButton" onclick="w3_open()">
+							Submit
+						</button>
 					</form>
 				</div>
 			</div>
@@ -356,6 +361,39 @@
 	</div>
 </div>
 
+
+</div>
+
+<div class="modal fade" id="myModal" role="dialog">
+	<div class="modal-dialog">
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-body">
+			<button type="button" class="close" data-dismiss="modal">&times;</button>				
+				<form name="newYourPlaylistForm" id="newTaskForm" class="w3-container newYourPlaylistForm emailModalForm" method="post" ng-submit="addTask()">
+					<p>
+						<input placeholder="Your name" class="w3-input mainLoginInput" name="newTaskTitle" id="inputTitle" type="text" ng-model="newTask.title" required>
+					</p>
+					<p>     
+						<input placeholder="email address" class="w3-input mainLoginInput" name="newTaskDescription" id="inputDescription" type="text" ng-model="newTask.description" required>
+					</p>
+					<p class="whatKindOfPlaylistPara">
+						What is on your mind?
+					</p>
+					<p>
+						<textarea class="w3-input" name="newFormularDescription" cols="40" rows="3" required></textarea>                 
+					</p>
+					<div class="addAttachmentsDiv">
+						<label for="files" class="btn addAttachments"><span class="plus">+</span> Add attachments:<br><span>...images or files of anything you need to describe your idea</span></label>
+						<input id="files" style="visibility:hidden;" type="file">
+					</div>
+					<button class="w3-button w3-black w3-round-xxlarge wantMusic submitModalButton" onclick="w3_open()">
+						Submit
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
 </div>
 
 	<div id="bottom_fade"></div>
@@ -499,5 +537,11 @@
     offset: 54
   });
 
-
+	$("li.languagesLi").click(function() {
+		$('li.languagesLi').each(function () {
+			$(this).find("span.language").removeClass("selectedLanguage")
+		});
+		$(this).find("span.language").addClass("selectedLanguage");
+		
+	});
 </script>

@@ -1122,12 +1122,12 @@ span.threeDots {
 	overflow: hidden;
   }
   
-.fade, .fade2 {
+.fade3, .fade2 {
 	  opacity: 100;
 	position: relative;
 	height: 5em; /* exactly three lines */
   }
-.fade:after {
+.fade3:after {
 	content: "";
 	text-align: right;
 	position: absolute;
