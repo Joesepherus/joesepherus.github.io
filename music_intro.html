@@ -12,13 +12,13 @@
     <link rel="stylesheet" href="client/css/style.css">
 </head>
 
-<body class="intro">
+<body class="musicIntro">
     <!-- Sidebar -->
-    <div class="theBiggie w3-sidebar w3-bar-block w3-border-right" id="mySidebar">
-        <div class="playlistLogoDivMusicIntro">
+    <div class="w3-sidebar w3-bar-block w3-border-right musicIntroSidebarMasterDiv">
+        <div class="musicIntroSidebarMainDiv">
             <span class="tooltiptext">choose me</span>
             <a href="music_about.html">
-                <svg class="playlistLogoMusicIntro" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.7 8.7">
+                <svg class="logoPlaylists" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.7 8.7">
                     <defs>
                         <style>
                             .cls-1 {
@@ -34,19 +34,19 @@
                     <path class="cls-1" d="M2.4,2.7H7.9a0.2,0.2,0,1,0,0-.4H2.4a0.2,0.2,0,1,0,0,.4h0ZM6.9,6.2H2.4a0.2,0.2,0,0,0,0,.4H6.9a0.2,0.2,0,0,0,0-.4h0Zm1-2H2.4a0.2,0.2,0,1,0,0,.4H7.9a0.2,0.2,0,1,0,0-.4h0Zm-2.4,4H2.4a0.2,0.2,0,0,0,0,.4H5.6a0.2,0.2,0,0,0,0-.4h0Zm0,0"
                         transform="translate(-2.2 -2.3)" />
                 </svg>
-                <p class="pTest">PLAYLISTS</p>
+                <p class="logoText">PLAYLISTS</p>
             </a>
         </div>
 
-        <div class="videoLogoDivMusicIntro">
-            <p class="iconTest">&#xe900</p>
-            <p class="pTest">VIDEOS</p>
+        <div class="logoVideos">
+            <p class="logoFontPara">&#xe900</p>
+            <p class="logoText">VIDEOS</p>
         </div>
     </div>
 
     <div class="container">
-        <div class="main-container">
-            <div class="fixer-container">
+        <div class="musicIntroMasterDiv">
+            <div class="musicIntroMainDiv">
                 <svg class="headphonesIcon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                     x="0px" y="0px" viewBox="0 0 583.7 575.9" style="enable-background:new 0 0 583.7 575.9;" xml:space="preserve">
                     <g>
@@ -59,9 +59,9 @@
                     </g>
                 </svg>
 
-                <div class="musicIntro">
-                    <p class="musicIntro">BEST EXPERIENCE</p>
-                    <p class="musicIntro">WITH ENABLED AUDIO</p>
+                <div class="musicIntroDescDiv">
+                    <p class="musicIntroDesc">BEST EXPERIENCE</p>
+                    <p class="musicIntroDesc">WITH ENABLED AUDIO</p>
                 </div>
 
                 <button class="w3-button w3-black w3-round-xxlarge wantMusic" onclick="w3_open()">
@@ -89,29 +89,29 @@
 <script>
     // sliding of the left sidebar
     function w3_open() {
-        $("#mySidebar")
+        $(".musicIntroSidebarMasterDiv")
             .animate({
                 left: "0",
                 width: "600"
             }, 1000);
 
-        $(".playlistLogoDivMusicIntro").delay(1000).fadeIn(700);
-        $(".videoLogoDivMusicIntro").delay(1500).fadeIn(700);
-        $(".playlistLogoDivMusicIntro .tooltiptext").delay(2000).fadeIn(700);
+        $(".musicIntroSidebarMainDiv").delay(1000).fadeIn(700);
+        $(".logoVideos").delay(1500).fadeIn(700);
+        $(".musicIntroSidebarMainDiv .tooltiptext").delay(2000).fadeIn(700);
     }
 
-    $("#mySidebar div").click(function (e) {
+    $(".musicIntroSidebarMasterDiv div").click(function (e) {
         e.stopPropagation();
     })
 
     // clicking outside of the left sidebar makes it disappear to the left
     window.onclick = function (event) {
-        if (!event.target.matches('#mySidebar') && !event.target.matches('.wantMusic')) {
-            $(".playlistLogoDivMusicIntro .tooltiptext").fadeOut(1);
-            $(".playlistLogoDivMusicIntro").fadeOut(1);
-            $(".videoLogoDivMusicIntro").fadeOut(1);
+        if (!event.target.matches('.musicIntroSidebarMasterDiv') && !event.target.matches('.wantMusic')) {
+            $(".musicIntroSidebarMainDiv .tooltiptext").fadeOut(1);
+            $(".musicIntroSidebarMainDiv").fadeOut(1);
+            $(".logoVideos").fadeOut(1);
 
-            $("#mySidebar")
+            $(".musicIntroSidebarMasterDiv")
                 .animate({
                     left: "-300",
                     width: "0"

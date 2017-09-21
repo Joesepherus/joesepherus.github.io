@@ -6,6 +6,13 @@ body {
     background: linear-gradient(to right, #f1f1f1 , #ffffff); /* Standard syntax (must be last) */
 }
 
+html, body { 
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
 img { 
 	border: 0; 
 	max-width: 100%; 
@@ -16,6 +23,244 @@ img {
   	text-align: center;
   	color: #efefef;
   	text-shadow: 1px 1px 0 #000;
+}
+
+.col-md-12 {
+	padding-left: 0px!important;
+}
+
+.danjelLogo {
+	width: 150;
+	height: 56.02px;
+	margin-top: 20px;
+}
+
+p {
+	color: black;
+}
+
+svg {
+	display: block;
+	margin: 0 auto 20px;
+	fill: #ea5700;
+}
+
+iframe {
+	margin-left: 40px;
+	margin-top: 90px;
+	position:relative;
+	z-index: 9999;
+	visibility: hidden;
+}
+
+nav ul {
+	margin: 20px 0 0;
+}
+nav ul li {
+	display: inline-block;
+	margin: 0 30px 0 0;
+}
+
+h3 {
+	font-family: "Gotham-bold";	
+	letter-spacing: 3px;	
+	color: #3c3c3c;
+}
+
+div.leftSection {
+	margin-right: 30px;
+	position: fixed;
+}
+
+.playlistLogo {
+	width: 60%!important;
+	height: 60%;
+	padding-top: 20px;
+	margin-left: 30px;
+	fill: white;
+}
+
+.videoLogo {
+	width: 50%!important;
+	max-height: 120px;
+	margin-top: 50px;
+	float:left;
+	display: block;
+	margin-bottom: 0px;
+}
+
+.videoLogoDiv {
+	text-align:center;
+}
+
+.videoLogoDiv svg{
+    display: block;
+}
+
+.playlistLogoDiv {
+	width: 110px;
+	height: 110px;
+	margin-top: 160px;
+	border-radius: 25px;
+	 background: -webkit-linear-gradient(left, #ea5700 , #f17700); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #ea5700 , #f17700); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #ea5700 , #f17700); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #ea5700 , #f17700); /* Standard syntax (must be last) */
+}
+
+svg.vinylLogo {
+	width: auto;
+	height: auto; 	
+	max-width: 50%;
+	bottom: 0;
+}
+
+svg.arrow {
+	width: auto;
+	height: auto; 
+	max-width: 40%; 
+	bottom: 0;
+}
+
+/* this class was called div.lil*/
+div.footerDivider {
+	height: auto;
+	bottom: 0;
+	margin-right: -50px;
+}
+
+div.arrow{
+	max-width: 100px;
+	height: auto;
+}
+
+div.vinyl {
+	max-width: 100px;
+	height: auto;
+}
+
+.footer {
+	bottom: 0;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	height: 40px;
+}
+  
+.divider {
+	width: 10%;
+	height: 100%;
+	max-height: 800px;
+}  
+
+input {
+	background: transparent;
+	margin-bottom: 40px;
+	font-family: "Gotham-light";
+	color: #3c3c3c;
+	letter-spacing: 1px;	
+	font-size: 12px;						
+}
+
+.w3-container {
+	padding: 0px 0px 0px 0px;
+}
+
+h3 span {
+	font-family: "Gotham-bold"!important;	
+	color: #ed6c1e;	
+}
+
+input placeholder {
+	font-family: "Gotham-light";	
+	color: #3c3c3c;	
+	letter-spacing: 1px;		
+}
+
+p {
+	letter-spacing: 1px;	
+}
+
+label {
+	font-family: "Gotham-light";	
+	color: #3c3c3c;
+	letter-spacing: 1px;		
+}
+
+label span {
+	font-size: 12px;
+	letter-spacing: 1px;		
+}
+
+i {
+	color: #bebebe;
+}
+
+* { 
+	margin: 0;
+	padding: 0;
+}
+
+div.socialMediaDivider {
+	margin-right: -10px;
+	min-height: 22.5px;
+	float: left;
+	position: relative;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+div.email {
+	margin-top: 7px; 
+}
+
+.logoPlaylists {
+	position: relative;
+	width: 40%!important;
+	height:auto;
+}
+
+.logoVideos {
+	width: 200px!important;
+	text-align: center;
+	margin-top: 100px;
+	display: none;
+}
+
+.logoText {
+	font-family: "Gotham-light";
+	color: #F5945C;
+	margin-top: -20px;
+}
+
+.logoFontPara {
+	font-family: "testing";
+	font-size: 72px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f17700), to(#ea5700));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	display: initial;
+}
+
+.logoPlaylistsDiv  {
+    width: 120px;
+    color: #ea5700;
+    text-align: center;
+	font-family: "Gotham-book";
+	letter-spacing: 1px;
+	font-size: 15px;
+	margin-top: 200px;
+	position: fixed;
+}
+
+.logoVideosDiv {
+    width: 120px;
+    color: #ea5700;
+    text-align: center;
+	font-family: "Gotham-book";
+	letter-spacing: 1px;
+	font-size: 15px;
+	margin-top: 350px;
+	position: fixed;
 }
 
 /* ===== FONTS ===== */
@@ -49,7 +294,7 @@ img {
   	list-style: none;
   	padding: 50px 0 0px;
 	position: fixed;
-	margin-left: 8px;
+	margin-left: 4px;
 }
 
 i {
@@ -176,7 +421,6 @@ div.selectedYearTimeline{
 	right: auto;
 }
 
-
 /** timeline circle icons **/
 .timeline li .tl-circ {
 	position: absolute;
@@ -267,45 +511,34 @@ div.selectedYearTimeline{
 }
 
 
-/* ===== index.html ===== */
+/* ===== allPlaylists.html alebo index.html ===== */
 
-p {
-  	color: black;
-}
-
-.test {
-	margin-top: 1800px;
-}
-
-.playlistImg {
+.allPlaylistsImg {
 	width: 100%!important;
 	height: auto;
 	opacity: 0.5;
 	cursor: pointer;
 }
 
-.playlistTxt {
+.allPLaylistsTxt {
 	height: 150px;
 	width: 450px;
 	font-family: "Gotham-light";
 	letter-spacing: 1px;	
 	font-size: 12px;
+	text-align: justify;
 }
 
-.date {
+.allPlaylistsDate {
 	width: 200px;
     text-align: right;
 }
 
-.col-md-12 {
-	padding-left: 0px!important;
-}
-
-div.description {
+div.allPlaylistsDescriptionDiv {
 	height:60px;
 }
 
-.description {
+.allPlaylistsDescriptionPara {
 	max-height: 0px;
 	height: 0px;
 	overflow: hidden;
@@ -313,80 +546,50 @@ div.description {
 	margin-bottom: 30px;
 }
 
-.descHighlited {
+.allPlaylistsDescHighlited {
 	max-height: 400px;
 	overflow: visible;
 	text-overflow: normal; 
 }
 
-.playlist {
+.allPlaylistsMainDiv {
 	height: 220px;
 }
 
-
-.parent {
+.allPlaylistsImgParentDiv {
 	height: 200px;
 	width: 200px;
 	margin-left: -50px;
+	background-position: center;
+	background-size: cover;
+	transition: all .5s;
 }
 
-.child {
+/* redundant class, if nothing fks up remove :)
+.allPlaylistsImgChildDiv {
   background-image: url("images/city.jpg");
   background-position: center;
   background-size: cover;
   transition: all .5s;
+}*/
+
+.allPlaylistsImgParentDiv:hover {
+  	transform: scale(1.1);
 }
 
-.child:hover {
-  transform: scale(1.1);
-}
-
-.thumbnail {
-	margin-bottom: 0px;
-}
-
-#test {
-    opacity: 0;
-    -webkit-transition: all 2s ease-in-out;
-    -moz-transition: all 2s ease-in-out;
-    -ms-transition: all 2s ease-in-out;
-    -o-transition: all 2s ease-in-out;
-    transition: all 2s ease-in-out;
-}
-
-.testingDiv {
+.allPlaylistsMasterDiv {
 	margin-top: 34px;
 	padding-left: 100px;
 	height: 3000px;
 }
 
-
-.logo {
-	width: 150;
-	height: 56.02px;
-	margin-top: 20px;
-}
-
-svg {
-  display: block;
-  margin: 0 auto 20px;
-  fill: #ea5700;
-}
-
-div.about {
+div.allPlaylistsAbout {
 	margin-left: 16px;
 	height:200px;
-	
 }
 
-iframe {
-	margin-left: 40px;
-	margin-top: 90px;
-	position:relative;
-	z-index: 9999;
-}
-
-/*.description .read-more { 
+/* should be removed, it isnt used anywhere 
+.description .read-more { 
   position: absolute; 
   bottom: 0; 
   left: 0;
@@ -397,8 +600,10 @@ iframe {
    "transparent" only works here because == rgba(0,0,0,0) 
 }*/
 
- /*test */
+ /* no idea wtf this part of the css is,
+  should remove it */
 
+  /*
 		html, body { margin: 0; padding: 0; width: 100%; height: 100%;}
 		header {
 			position: fixed;
@@ -408,13 +613,7 @@ iframe {
 			background: #fff;
 		}
 
-		nav ul {
-			margin: 20px 0 0;
-		}
-		nav ul li {
-			display: inline-block;
-			margin: 0 30px 0 0;
-		}
+
  
 		a { color: #4D4D4D;  font-family: sans-serif; text-transform: uppercase; text-decoration: none;  }
 		.active { color: #2dbccb; }
@@ -428,181 +627,70 @@ iframe {
 		#home { background: #2dbccb; }
 		#about { background: #f6c362; }
 		#services { background-color: #eb7e7f; }
-		
+*/		
 
-/* Categories Website */
+/* ===== categories.html ===== */
 
-img.categories {
+img.categoriesImg {
 	width: 100%; 
 	height: auto;
 	margin-right: 50px;
 	margin-bottom: 150px;
 	margin-top: 30px;
 	cursor: pointer;
-		
 }
 
-.img-with-text {
-	width: 160px;
-	height: 160px;
+h3.categoriesMainHeader {
+	color: #3c3c3c;
 }
 
-.img-with-text2 {
+.categoriesMainDiv {
+
+}
+
+.categoriesImgWithText {
 	width: 90%;
 	height: auto;
 	text-align:center;
-	
 }
 
-.img-with-text img {
+.categoriesMainDiv {
+	transition: all .5s;
+  padding-right: 0px;
+  padding-left: 0px;
+  width: 23%;
+  margin-right: 56px;
+  margin-bottom: 40px;
+  width: 160px;
+  height: 160px;
+}
+
+.categoriesMainDiv img {
 	display:block;
 	margin: 0!important;
 }
 
-div.categories {
+.categoriesMainDiv:hover {
+	opacity: 0.8;
+}
+
+div.categoriesMasterDiv, div.yourPlaylistMasterDiv {
 	margin-top: 100px;
 }
 
-div.leftSection {
-	margin-right: 30px;
-	position: fixed;
-}
-
-p.descriptionCategories {
+p.categoriesDescription {
 	margin-bottom: 30px;
 	font-family: "Gotham-light";
 	letter-spacing: 1px;	
 	font-size: 12px;	
 }
 
-
-
-
-
-.img-with-text img {
-    display: block;
-	margin: 0 auto;
-}
-
-.playlistLogo {
-	width: 60%!important;
-	height: 60%;
-	padding-top: 20px;
-	margin-left: 30px;
-	fill: white;
-}
-
-.videoLogo {
-	width: 50%!important;
-	max-height: 120px;
-	margin-top: 50px;
-	float:left;
-	display: block;
-	margin-bottom: 0px;
-}
-
-.videoLogoDiv {
-	text-align:center;
-	
-}
-
-.videoLogoDiv svg{
-    display: block;
-	
-}
-
-
-.playlistLogoDiv {
-	width: 110px;
-	height: 110px;
-	margin-top: 160px;
-	border-radius: 25px;
-	 background: -webkit-linear-gradient(left, #ea5700 , #f17700); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, #ea5700 , #f17700); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, #ea5700 , #f17700); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right, #ea5700 , #f17700); /* Standard syntax (must be last) */
-}
-
-h4.categories{
+h4.categoriesHeading {
 	font-family: "Gotham-light";
-	
 }
 
-h3 {
-	font-family: "Gotham-bold";	
-	letter-spacing: 3px;	
-}
 
-svg.vinylLogo {
-	width: auto;
-	height: auto; 	
-	max-width: 50%;
-	bottom: 0;
-}
-
-svg.arrow {
-	width: auto;
-	height: auto; 
-	max-width: 40%; 
-	bottom: 0;
-}
-
-div.lil {
-	height: auto;
-	bottom: 0;
-	margin-right: -50px;
-}
-
-div.arrow{
-	max-width: 100px;
-	height: auto;
-}
-
-div.vinyl {
-	max-width: 100px;
-	height: auto;
-}
-
-.childLogos {
-  	transition: all .5s;
-	padding-right: 0px;
-	padding-left: 0px;
-	width: 23%;
-	margin-right: 56px;
-	margin-bottom: 40px;
-}
-
-.childLogos:hover {
-  opacity: 0.8;
-}
-
-.footer {
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 40px;
-}
-
-.divider {
-	width: 10%;
-	height: 100%;
-	max-height: 800px;
-}
-
-/* Your playlist */
-
-input {
-	background: transparent;
-	margin-bottom: 40px;
-	font-family: "Gotham-light";
-	color: #3c3c3c;
-	letter-spacing: 1px;	
-	font-size: 12px;						
-}
-
-.w3-container {
-	padding: 0px 0px 0px 0px;
-}
+/* ===== your_playlist.html ===== */
 
 .yourPlaylistPara {
 	color: #3c3c3c;
@@ -611,16 +699,9 @@ input {
 	padding-left: 7px;
 }
 
-h3 span {
-	font-family: "Gotham-bold"!important;	
-	color: #ed6c1e;	
-}
-
 .newYourPlaylistForm {
 	margin-top: 50px;
 }
-
-
 
 .addAttachments {
 	font-size: 15px;	
@@ -631,54 +712,29 @@ div.addAttachmentsDiv {
 	margin-left: -6px;
 }
 
-label {
-	font-family: "Gotham-light";	
-	color: #3c3c3c;
-	letter-spacing: 1px;		
-}
-
-label span {
-	font-size: 12px;
-	letter-spacing: 1px;		
-}
-
 h3.yourPlaylistHeader {
 	font-family: "Gotham-book";	
 	letter-spacing: 3px;
 	padding-left: 7px;	
 }
 
-i {
-	color: #bebebe;
-}
-
-.mainLoginInput::-webkit-input-placeholder {
+.formsPlaceholder::-webkit-input-placeholder {
 	font-family: "Gotham-light";
 	letter-spacing: 1px;			
 }
 
-.mainLoginInput:-ms-input-placeholder {
+.formsPlaceholder:-ms-input-placeholder {
 	font-family: "Gotham-light";	
 	letter-spacing: 1px;	
 }
 
-.mainLoginInput:-moz-placeholder {
+.formsPlaceholder:-moz-placeholder {
 	font-family: "Gotham-light";
 	letter-spacing: 1px;	
 }
 
-.mainLoginInput::-moz-placeholder {
+.formsPlaceholder::-moz-placeholder {
 	font-family: "Gotham-light";	
-	letter-spacing: 1px;	
-}
-
-input placeholder {
-	font-family: "Gotham-light";	
-	color: #3c3c3c;	
-	letter-spacing: 1px;		
-}
-
-p {
 	letter-spacing: 1px;	
 }
 
@@ -703,14 +759,15 @@ textarea {
 	font-size: 12px;			
 }
 
-/* music intro */
+/* ===== music_intro.html ===== */
 
-body.intro {
-  background: red; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left top, #dd5600, #fab700); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom right, #dd5600, #fab700); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom right, #dd5600, #fab700); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom right, #dd5600, #fab700); /* Standard syntax */
+body.musicIntro {
+	background: red; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left top, #dd5600, #fab700); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, #dd5600, #fab700); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, #dd5600, #fab700); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, #dd5600, #fab700); /* Standard syntax */
+ 	overflow: auto; 
 }
 
 .headphonesIcon {
@@ -730,7 +787,6 @@ button.wantMusic {
 	font-family: "Gotham-bold";
 	letter-spacing: 1px;
 	font-size: 15px;
-
 }
 
 button.wantMusic:hover {
@@ -738,37 +794,21 @@ button.wantMusic:hover {
 	color: white!important;
 }
 
-    .main-container {
-      float: left;
-      position: relative;
-      left: 50%;
-    }
-    .fixer-container {
-      float: left;
-      position: relative;
-      left: -50%;
-	}
+.musicIntroMasterDiv {
+    float: left;
+    position: relative;
+    left: 50%;
+}
+
+.musicIntroMainDiv {
+	float: left;
+    position: relative;
+    left: -50%;
+}
 	
-#mySidebar {
+.musicIntroSidebarMasterDiv {
 	left: -300px;
 	display:block;
-}
-
-div.musicIntro {
-	text-align: center;
-	color: white!important;
-	margin-top: -20px;
-}
-
-p.musicIntro {
-	text-align: center;
-	color: white!important;
-	font-family: "Gotham-book";
-	letter-spacing: 1px;
-	font-size: 15px;
-}
-
-.theBiggie {
 	width: 0;
 	left: 0px!important;
 	display: block;
@@ -776,36 +816,21 @@ p.musicIntro {
 	border: none!Important;
 }
 
-* { margin: 0; padding: 0;}
-/*
-a { 
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100%;
-  display: block;
+div.musicIntroDescDiv {
+	text-align: center;
+	color: white!important;
+	margin-top: -20px;
 }
 
-a:first-child {
-  -webkit-clip-path: polygon(0 0, 0 100vh, 100% 100vh);
-  clip-path: polygon(0 0, 0 100vh, 100% 100vh);
-  background: #d6d6d6;
+p.musicIntroDesc {
+	text-align: center;
+	color: white!important;
+	font-family: "Gotham-book";
+	letter-spacing: 1px;
+	font-size: 15px;
 }
 
-a:last-child {
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100vh);
-  clip-path: polygon(0 0, 0 100vh, 100% 100vh);
-  background: #212121;
-}*/
-
-.dicksy {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted white;
-}
-
-.playlistLogoDivMusicIntro .tooltiptext {
+.musicIntroSidebarMainDiv .tooltiptext {
     visibility: hidden;
     width: 120px;
     background-color: white;
@@ -827,7 +852,7 @@ a:last-child {
 }
 
 
-.playlistLogoDivMusicIntro .tooltiptext::after {
+.musicIntroSidebarMainDiv .tooltiptext::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -838,7 +863,7 @@ a:last-child {
     border-color: transparent white transparent transparent;
 }
 
-.playlistLogoDivMusicIntro {
+.musicIntroSidebarMainDiv {
 	height: 110px;
 	border-radius: 25px;
 	background: transparent;
@@ -849,69 +874,9 @@ a:last-child {
 	display: none;
 }
 
-.playlistLogoMusicIntro {
-	position: relative;
-	width: 40%!important;
-	height:auto;
-}
-
-.videoLogoDivMusicIntro {
-	width: 200px!important;
-	text-align: center;
-	margin-top: 100px;
-	display: none;
-}
-
-.videoLogoMusicIntro {
-	position: relative;
-	width: 40%!important;
-	height: auto;
-	
-}
-
-.pTest {
-	font-family: "Gotham-light";
-	color: #ea5700;
-	margin-top: -20px;
-}
-
-.icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
-}
-.icon-video {
-  width: 1.013671875em;
-}
-
-.iconTest {
-	font-family: "testing";
-	font-size: 72px;
-
-	background: -webkit-gradient(linear, left top, left bottom, from(#f17700), to(#ea5700));
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	display: initial;
-}
 
 
-div.socialMediaDivider {
-	margin-right: -10px;
-	min-height: 22.5px;
-	float: left;
-	position: relative;
-	padding-right: 15px;
-	padding-left: 15px;
-}
-
-div.email {
-	margin-top: 7px; 
-}
-
-/* music_about.html */
+/* ===== music_about.html ===== */
 
 div.musicAbout {
 	margin-top: 300px;
@@ -1301,11 +1266,13 @@ h1.slash {
 	padding-right: 100px;
 }
 
+/* najst si preto oddelenu classu, 
+nech to nedojebava ostatne heading
 h3 {
 	font-family: "Gotham-book";
 	color: white;
 	margin-left: 100px;
-}
+}*/
 
 .brandingInput {
 	color: white!important;

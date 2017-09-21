@@ -16,7 +16,7 @@
 	<div class="col-md-2">
 		<div class="leftSection">
 			<a href="music_intro.html">
-				<svg class="logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+				<svg class="danjelLogo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 				 x="0px" y="0px" viewBox="0 0 630.22 286.75" style="enable-background:new 0 0 630.22 286.75;" xml:space="preserve">
 					<g>
 						<path d="M412.6,247.27l-2.04-51.35l-7.92,51.35h-3.43l-7.67-51.35l-1.96,51.35h-2.29l2.29-57.23h3.18l8.16,53.64l8.33-53.64h3.43
@@ -62,7 +62,7 @@
 		</div>
 	</div>
 
-	<div class="col-md-6 categories">
+	<div class="col-md-6 yourPlaylistMasterDiv">
 		<h3 class="yourPlaylistHeader yourPlaylist">
 			<span>YOUR</span> PLAYLIST
 		</h3>
@@ -101,10 +101,10 @@
 					<button type="button" class="close" data-dismiss="modal">&times;</button>				
 					<form name="newYourPlaylistForm" id="newTaskForm" class="w3-container newYourPlaylistForm emailModalForm" method="post" ng-submit="addTask()">
 						<p>
-							<input placeholder="Your name" class="w3-input mainLoginInput" name="newTaskTitle" id="inputTitle" type="text" ng-model="newTask.title" required>
+							<input placeholder="Your name" class="w3-input formsPlaceholder" name="newTaskTitle" id="inputTitle" type="text" ng-model="newTask.title" required>
 						</p>
 						<p>     
-							<input placeholder="email address" class="w3-input mainLoginInput" name="newTaskDescription" id="inputDescription" type="text" ng-model="newTask.description" required>
+							<input placeholder="email address" class="w3-input formsPlaceholder" name="newTaskDescription" id="inputDescription" type="text" ng-model="newTask.description" required>
 						</p>
 						<p class="whatKindOfPlaylistPara">
 							What is on your mind?
@@ -122,6 +122,35 @@
 					</form>
 				</div>
 			</div>
+		</div>
+	</div>
+
+	<div class="col-md-2 ">
+		<div class="logoPlaylistsDiv">
+			<a href="index.html">
+				<svg class="logoPlaylists" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.7 8.7">
+					<defs>
+						<style>
+							.cls-1 {
+								fill-rule: evenodd;
+							}
+						</style>
+					</defs>
+					<title>playlist</title>
+					<path d="M8.7,6.6a2.2,2.2,0,1,0,2.2,2.2A2.2,2.2,0,0,0,8.7,6.6h0Zm0,4a1.8,1.8,0,1,1,1.8-1.8,1.8,1.8,0,0,1-1.8,1.8h0Zm0,0"
+					 transform="translate(-2.2 -2.3)" />
+					<path d="M9.5,8.6H8.9V8a0.2,0.2,0,1,0-.4,0V8.6H7.9a0.2,0.2,0,1,0,0,.4H8.5V9.6a0.2,0.2,0,0,0,.4,0V9H9.5a0.2,0.2,0,0,0,0-.4h0Zm0,0"
+					 transform="translate(-2.2 -2.3)" />
+					<path class="cls-1" d="M2.4,2.7H7.9a0.2,0.2,0,1,0,0-.4H2.4a0.2,0.2,0,1,0,0,.4h0ZM6.9,6.2H2.4a0.2,0.2,0,0,0,0,.4H6.9a0.2,0.2,0,0,0,0-.4h0Zm1-2H2.4a0.2,0.2,0,1,0,0,.4H7.9a0.2,0.2,0,1,0,0-.4h0Zm-2.4,4H2.4a0.2,0.2,0,0,0,0,.4H5.6a0.2,0.2,0,0,0,0-.4h0Zm0,0"
+					 transform="translate(-2.2 -2.3)" />
+				</svg>
+				<p class="logoText">PLAYLISTS</p>
+			</a>
+		</div>
+
+		<div class="logoVideosDiv">
+			<p class="logoFontPara">&#xe900</p>
+			<p class="logoText">VIDEOS</p>
 		</div>
 	</div>
 
