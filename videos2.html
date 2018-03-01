@@ -200,22 +200,28 @@
 			<!-- Modal content-->
 			<div class="modal-content">
 				<div class="modal-body">
-					<button type="button" class="close" data-dismiss="modal">&times;</button>				
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
 					<form name="newYourPlaylistForm" id="newTaskForm" class="w3-container newYourPlaylistForm emailModalForm" method="post" ng-submit="addTask()">
 						<p>
-							<input placeholder="Your name" class="w3-input mainLoginInput" name="newTaskTitle" id="inputTitle" type="text" ng-model="newTask.title" required>
+							<input placeholder="Your name" class="w3-input mainLoginInput" name="newTaskTitle" id="inputTitle" type="text" ng-model="newTask.title"
+							 required>
 						</p>
-						<p>     
-							<input placeholder="email address" class="w3-input mainLoginInput" name="newTaskDescription" id="inputDescription" type="text" ng-model="newTask.description" required>
+						<p>
+							<input placeholder="email address" class="w3-input mainLoginInput" name="newTaskDescription" id="inputDescription" type="text"
+							 ng-model="newTask.description" required>
 						</p>
 						<p class="whatKindOfPlaylistPara">
 							What is on your mind?
 						</p>
 						<p>
-							<textarea class="w3-input" name="newFormularDescription" cols="40" rows="3" required></textarea>                 
+							<textarea class="w3-input" name="newFormularDescription" cols="40" rows="3" required></textarea>
 						</p>
 						<div class="addAttachmentsDiv">
-							<label for="files" class="btn addAttachments"><span class="plus">+</span> Add attachments:<br><span>...images or files of anything you need to describe your idea</span></label>
+							<label for="files" class="btn addAttachments">
+								<span class="plus">+</span> Add attachments:
+								<br>
+								<span>...images or files of anything you need to describe your idea</span>
+							</label>
 							<input id="files" style="visibility:hidden;" type="file">
 						</div>
 						<button class="w3-button w3-black w3-round-xxlarge wantMusic submitModalButton" onclick="w3_open()">
@@ -251,8 +257,10 @@
 		</div>
 
 		<div class="logoVideosDiv">
-			<p class="logoFontPara">&#xe900</p>
-			<p class="logoText">VIDEOS</p>
+			<a href="videos.html">
+				<p class="logoFontPara">&#xe900</p>
+				<p class="logoText">VIDEOS</p>
+			</a>
 		</div>
 	</div>
 
@@ -260,26 +268,26 @@
 		<div class="col-md-4" style="margin-right:150px">
 			<div class="socialMediaDivider">
 				<a target="_blank" href="https://www.facebook.com/danjel.zone">
-            		<i class="fa fa-facebook" aria-hidden="true"></i>
-        		</a>
+					<i class="fa fa-facebook" aria-hidden="true"></i>
+				</a>
 				<a target="_blank" href="https://www.instagram.com/danjel.zone/">
-            		<i class="fa fa-instagram" aria-hidden="true"></i>
-        		</a>
+					<i class="fa fa-instagram" aria-hidden="true"></i>
+				</a>
 			</div>
 
 			<div class="socialMediaDivider">
 				<a target="_blank" href="https://soundcloud.com/danjelzone">
-            		<i class="fa fa-soundcloud" aria-hidden="true"></i>
-        		</a>
+					<i class="fa fa-soundcloud" aria-hidden="true"></i>
+				</a>
 				<a target="_blank" href="https://open.spotify.com/user/danjel.zone">
-            		<i class="fa fa-spotify" aria-hidden="true"></i>
-        		</a>
+					<i class="fa fa-spotify" aria-hidden="true"></i>
+				</a>
 			</div>
 
 			<div class="socialMediaDivider email">
 				<button class="email" data-toggle="modal" data-target="#myModal">
-            		<i class="fa fa-envelope-o" aria-hidden="true"></i>
-        		</button>
+					<i class="fa fa-envelope-o" aria-hidden="true"></i>
+				</button>
 			</div>
 		</div>
 
